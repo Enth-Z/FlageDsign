@@ -1,0 +1,72 @@
+#x轴向竖直方向偏移。vitosinski曲线
+#尾部为维托曲线
+yy=[[],[]] 
+yy1 = vitosinski(np.linspace(0,0.3,12),0.15,0.1,0.3) 
+yy1[0] = yy1[0]+0.6  
+yy1[1]=-yy1[1]
+yy1[1]-=yy1[1][-1]
+yy2= zhixian(x=np.linspace(0.2001,0.5999, 39 ),k1=0,k2=0.0007) 
+yy2[1] = yy2[1]-(yy2[1][-1]-yy1[1][0])  
+yy3 = vitosinski(np.linspace(0,0.2,10),0.16,0.09,0.2) 
+yy3[1]=-yy3[1]
+yy3[1]=yy3[1]-(yy3[1][-1]-yy2[1][0])
+yy[0]= np.append(yy[0],yy3[0])
+yy[0]= np.append(yy[0],yy2[0])
+yy[0]= np.append(yy[0],yy1[0])
+yy[1]= np.append(yy[1],yy3[1])
+yy[1]= np.append(yy[1],yy2[1])
+yy[1]= np.append(yy[1],yy1[1])
+plt.plot(yy[0],yy[1])
+from scipy.interpolate import splev, splrep
+s1=splrep(yy[0],yy[1],k=2)
+ny1=splev(nx,s1)
+delta=ny1
+
+#尾部是n次曲线（参数
+#x轴向竖直方向偏移。vitosinski曲线
+yy=[[],[]] 
+yy1 = erciquxian(np.linspace(0,0.3,12),2.3,1.5) # 两个参数  k1(曲率）,k2（倍数）        尾部
+yy1[0] = yy1[0]+0.6  
+yy1[1]=yy1[1]
+yy1[1]-=yy1[1][-1]
+yy2= zhixian(x=np.linspace(0.2001,0.5999, 39 ),k1=0,k2=0.0007)  #一个参数k2（斜率）    中部
+yy2[1] = yy2[1]-(yy2[1][-1]-yy1[1][0])  
+yy3 = vitosinski(np.linspace(0,0.2,10),0.16,0.09,0.2) # 三个参数                        首部
+yy3[1]=-yy3[1]
+yy3[1]=yy3[1]-(yy3[1][-1]-yy2[1][0])
+yy[0]= np.append(yy[0],yy3[0])
+yy[0]= np.append(yy[0],yy2[0])
+yy[0]= np.append(yy[0],yy1[0])
+yy[1]= np.append(yy[1],yy3[1])
+yy[1]= np.append(yy[1],yy2[1])
+yy[1]= np.append(yy[1],yy1[1])
+plt.plot(yy[0],yy[1])
+from scipy.interpolate import splev, splrep
+s1=splrep(yy[0],yy[1],k=2)
+ny1=splev(nx,s1)
+delta=ny1
+
+#尾部直线，共4条曲线
+yy=[[],[]] 
+yy1= zhixian(x=np.linspace(0,0.25, 12 ),k1=0,k2=0.005)      #参数1
+
+yy1[0] = yy1[0]+0.65  
+yy1[1]=yy1[1]
+yy1[1]-=yy1[1][-1]
+yy2= zhixian(x=np.linspace(0.2001,0.55, 39 ),k1=0,k2=0.0007)   #参数2
+yy2[1] = yy2[1]-(yy2[1][-1]-yy1[1][0])-0.011                   #参数3
+yy3 = vitosinski(np.linspace(0,0.2,10),0.16,0.09,0.3)           
+yy3[1]=-yy3[1]
+yy3[1]=yy3[1]-(yy3[1][-1]-yy2[1][0])
+yy[0]= np.append(yy[0],yy3[0])
+yy[0]= np.append(yy[0],yy2[0])
+yy[0]= np.append(yy[0],yy1[0])
+yy[1]= np.append(yy[1],yy3[1])
+yy[1]= np.append(yy[1],yy2[1])
+yy[1]= np.append(yy[1],yy1[1])
+
+from scipy.interpolate import splev, splrep
+s1=splrep(yy[0],yy[1],k=2)
+ny1=splev(nx,s1)
+plt.plot(nx,ny1)
+delta=ny1
