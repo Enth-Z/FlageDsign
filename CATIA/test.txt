@@ -1,0 +1,5490 @@
+Dim hybridShapePlaneOffset5 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset5 = hybridShapes1.Item("平面.3")
+
+Dim reference7 As Reference
+Set reference7 = part1.CreateReferenceFromObject(hybridShapePlaneOffset5)
+
+Dim hybridShapePlaneOffset6 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset6 = hybridShapeFactory1.AddNewPlaneOffset(reference7, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset6
+
+part1.InWorkObject = hybridShapePlaneOffset6
+
+part1.Update
+
+Dim hybridShapeSplit5 As HybridShapeSplit
+Set hybridShapeSplit5 = hybridShapes1.Item("分割.3")
+
+Dim reference8 As Reference
+Set reference8 = part1.CreateReferenceFromObject(hybridShapeSplit5)
+
+Dim reference9 As Reference
+Set reference9 = part1.CreateReferenceFromObject(hybridShapePlaneOffset6)
+
+Dim hybridShapeSplit6 As HybridShapeSplit
+Set hybridShapeSplit6 = hybridShapeFactory1.AddNewHybridSplit(reference8, reference9, 1)
+
+hybridShapeFactory1.GSMVisibility reference8, 0
+
+hybridShapeSplit6.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit6
+
+part1.InWorkObject = hybridShapeSplit6
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument3 As DrawingDocument
+Set drawingDocument3 = documents1.Add("Drawing")
+
+drawingDocument3.Standard = catISO
+
+Dim drawingSheets3 As DrawingSheets
+Set drawingSheets3 = drawingDocument3.Sheets
+
+Dim drawingSheet3 As DrawingSheet
+Set drawingSheet3 = drawingSheets3.Item("页.1")
+
+drawingSheet3.PaperSize = catPaperA0
+
+drawingSheet3.[Scale] = 1#
+
+drawingSheet3.Orientation = catPaperLandscape
+
+Dim drawingViews3 As DrawingViews
+Set drawingViews3 = drawingSheet3.Views
+
+Dim drawingView3 As DrawingView
+Set drawingView3 = drawingViews3.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks3 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks3 = drawingView3.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior3 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior3 = drawingView3.GenerativeBehavior
+
+drawingViewGenerativeBehavior3.Document = product1
+
+drawingViewGenerativeBehavior3.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView3.X = 594.5
+
+drawingView3.Y = 420.5
+
+drawingView3.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior3 = drawingView3.GenerativeBehavior
+
+drawingViewGenerativeBehavior3.Update
+
+drawingView3.Activate
+
+Set drawingDocument3 = CATIA.ActiveDocument
+
+drawingDocument3.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt3.CATDrawing"
+
+Dim specsAndGeomWindow3 As SpecsAndGeomWindow
+Set specsAndGeomWindow3 = CATIA.ActiveWindow
+
+specsAndGeomWindow3.Close
+
+Set drawingDocument3 = CATIA.ActiveDocument
+
+drawingDocument3.Close
+
+Dim selection3 As Selection
+Set selection3 = partDocument1.Selection
+
+Dim visPropertySet3 As VisPropertySet
+Set visPropertySet3 = selection3.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit6.Parent
+
+Dim bSTR7 As String
+bSTR7 = hybridShapeSplit6.Name
+
+selection3.Add hybridShapeSplit6
+
+Set visPropertySet3 = visPropertySet3.Parent
+
+Dim bSTR8 As String
+bSTR8 = visPropertySet3.Name
+
+Dim bSTR9 As String
+bSTR9 = visPropertySet3.Name
+
+visPropertySet3.SetShow 1
+
+selection3.Clear
+
+Dim hybridShapePlaneOffset7 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset7 = hybridShapes1.Item("平面.4")
+
+Dim reference10 As Reference
+Set reference10 = part1.CreateReferenceFromObject(hybridShapePlaneOffset7)
+
+Dim hybridShapePlaneOffset8 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset8 = hybridShapeFactory1.AddNewPlaneOffset(reference10, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset8
+
+part1.InWorkObject = hybridShapePlaneOffset8
+
+part1.Update
+
+Dim hybridShapeSplit7 As HybridShapeSplit
+Set hybridShapeSplit7 = hybridShapes1.Item("分割.4")
+
+Dim reference11 As Reference
+Set reference11 = part1.CreateReferenceFromObject(hybridShapeSplit7)
+
+Dim reference12 As Reference
+Set reference12 = part1.CreateReferenceFromObject(hybridShapePlaneOffset8)
+
+Dim hybridShapeSplit8 As HybridShapeSplit
+Set hybridShapeSplit8 = hybridShapeFactory1.AddNewHybridSplit(reference11, reference12, 1)
+
+hybridShapeFactory1.GSMVisibility reference11, 0
+
+hybridShapeSplit8.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit8
+
+part1.InWorkObject = hybridShapeSplit8
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument4 As DrawingDocument
+Set drawingDocument4 = documents1.Add("Drawing")
+
+drawingDocument4.Standard = catISO
+
+Dim drawingSheets4 As DrawingSheets
+Set drawingSheets4 = drawingDocument4.Sheets
+
+Dim drawingSheet4 As DrawingSheet
+Set drawingSheet4 = drawingSheets4.Item("页.1")
+
+drawingSheet4.PaperSize = catPaperA0
+
+drawingSheet4.[Scale] = 1#
+
+drawingSheet4.Orientation = catPaperLandscape
+
+Dim drawingViews4 As DrawingViews
+Set drawingViews4 = drawingSheet4.Views
+
+Dim drawingView4 As DrawingView
+Set drawingView4 = drawingViews4.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks4 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks4 = drawingView4.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior4 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior4 = drawingView4.GenerativeBehavior
+
+drawingViewGenerativeBehavior4.Document = product1
+
+drawingViewGenerativeBehavior4.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView4.X = 594.5
+
+drawingView4.Y = 420.5
+
+drawingView4.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior4 = drawingView4.GenerativeBehavior
+
+drawingViewGenerativeBehavior4.Update
+
+drawingView4.Activate
+
+Set drawingDocument4 = CATIA.ActiveDocument
+
+drawingDocument4.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt4.CATDrawing"
+
+Dim specsAndGeomWindow4 As SpecsAndGeomWindow
+Set specsAndGeomWindow4 = CATIA.ActiveWindow
+
+specsAndGeomWindow4.Close
+
+Set drawingDocument4 = CATIA.ActiveDocument
+
+drawingDocument4.Close
+
+Dim selection4 As Selection
+Set selection4 = partDocument1.Selection
+
+Dim visPropertySet4 As VisPropertySet
+Set visPropertySet4 = selection4.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit8.Parent
+
+Dim bSTR10 As String
+bSTR10 = hybridShapeSplit8.Name
+
+selection4.Add hybridShapeSplit8
+
+Set visPropertySet4 = visPropertySet4.Parent
+
+Dim bSTR11 As String
+bSTR11 = visPropertySet4.Name
+
+Dim bSTR12 As String
+bSTR12 = visPropertySet4.Name
+
+visPropertySet4.SetShow 1
+
+selection4.Clear
+
+Dim hybridShapePlaneOffset9 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset9 = hybridShapes1.Item("平面.5")
+
+Dim reference13 As Reference
+Set reference13 = part1.CreateReferenceFromObject(hybridShapePlaneOffset9)
+
+Dim hybridShapePlaneOffset10 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset10 = hybridShapeFactory1.AddNewPlaneOffset(reference13, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset10
+
+part1.InWorkObject = hybridShapePlaneOffset10
+
+part1.Update
+
+Dim hybridShapeSplit9 As HybridShapeSplit
+Set hybridShapeSplit9 = hybridShapes1.Item("分割.5")
+
+Dim reference14 As Reference
+Set reference14 = part1.CreateReferenceFromObject(hybridShapeSplit9)
+
+Dim reference15 As Reference
+Set reference15 = part1.CreateReferenceFromObject(hybridShapePlaneOffset10)
+
+Dim hybridShapeSplit10 As HybridShapeSplit
+Set hybridShapeSplit10 = hybridShapeFactory1.AddNewHybridSplit(reference14, reference15, 1)
+
+hybridShapeFactory1.GSMVisibility reference14, 0
+
+hybridShapeSplit10.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit10
+
+part1.InWorkObject = hybridShapeSplit10
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument5 As DrawingDocument
+Set drawingDocument5 = documents1.Add("Drawing")
+
+drawingDocument5.Standard = catISO
+
+Dim drawingSheets5 As DrawingSheets
+Set drawingSheets5 = drawingDocument5.Sheets
+
+Dim drawingSheet5 As DrawingSheet
+Set drawingSheet5 = drawingSheets5.Item("页.1")
+
+drawingSheet5.PaperSize = catPaperA0
+
+drawingSheet5.[Scale] = 1#
+
+drawingSheet5.Orientation = catPaperLandscape
+
+Dim drawingViews5 As DrawingViews
+Set drawingViews5 = drawingSheet5.Views
+
+Dim drawingView5 As DrawingView
+Set drawingView5 = drawingViews5.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks5 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks5 = drawingView5.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior5 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior5 = drawingView5.GenerativeBehavior
+
+drawingViewGenerativeBehavior5.Document = product1
+
+drawingViewGenerativeBehavior5.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView5.X = 594.5
+
+drawingView5.Y = 420.5
+
+drawingView5.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior5 = drawingView5.GenerativeBehavior
+
+drawingViewGenerativeBehavior5.Update
+
+drawingView5.Activate
+
+Set drawingDocument5 = CATIA.ActiveDocument
+
+drawingDocument5.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt5.CATDrawing"
+
+Dim specsAndGeomWindow5 As SpecsAndGeomWindow
+Set specsAndGeomWindow5 = CATIA.ActiveWindow
+
+specsAndGeomWindow5.Close
+
+Set drawingDocument5 = CATIA.ActiveDocument
+
+drawingDocument5.Close
+
+Dim selection5 As Selection
+Set selection5 = partDocument1.Selection
+
+Dim visPropertySet5 As VisPropertySet
+Set visPropertySet5 = selection5.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit10.Parent
+
+Dim bSTR13 As String
+bSTR13 = hybridShapeSplit10.Name
+
+selection5.Add hybridShapeSplit10
+
+Set visPropertySet5 = visPropertySet5.Parent
+
+Dim bSTR14 As String
+bSTR14 = visPropertySet5.Name
+
+Dim bSTR15 As String
+bSTR15 = visPropertySet5.Name
+
+visPropertySet5.SetShow 1
+
+selection5.Clear
+
+Dim hybridShapePlaneOffset11 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset11 = hybridShapes1.Item("平面.6")
+
+Dim reference16 As Reference
+Set reference16 = part1.CreateReferenceFromObject(hybridShapePlaneOffset11)
+
+Dim hybridShapePlaneOffset12 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset12 = hybridShapeFactory1.AddNewPlaneOffset(reference16, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset12
+
+part1.InWorkObject = hybridShapePlaneOffset12
+
+part1.Update
+
+Dim hybridShapeSplit11 As HybridShapeSplit
+Set hybridShapeSplit11 = hybridShapes1.Item("分割.6")
+
+Dim reference17 As Reference
+Set reference17 = part1.CreateReferenceFromObject(hybridShapeSplit11)
+
+Dim reference18 As Reference
+Set reference18 = part1.CreateReferenceFromObject(hybridShapePlaneOffset12)
+
+Dim hybridShapeSplit12 As HybridShapeSplit
+Set hybridShapeSplit12 = hybridShapeFactory1.AddNewHybridSplit(reference17, reference18, 1)
+
+hybridShapeFactory1.GSMVisibility reference17, 0
+
+hybridShapeSplit12.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit12
+
+part1.InWorkObject = hybridShapeSplit12
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument6 As DrawingDocument
+Set drawingDocument6 = documents1.Add("Drawing")
+
+drawingDocument6.Standard = catISO
+
+Dim drawingSheets6 As DrawingSheets
+Set drawingSheets6 = drawingDocument6.Sheets
+
+Dim drawingSheet6 As DrawingSheet
+Set drawingSheet6 = drawingSheets6.Item("页.1")
+
+drawingSheet6.PaperSize = catPaperA0
+
+drawingSheet6.[Scale] = 1#
+
+drawingSheet6.Orientation = catPaperLandscape
+
+Dim drawingViews6 As DrawingViews
+Set drawingViews6 = drawingSheet6.Views
+
+Dim drawingView6 As DrawingView
+Set drawingView6 = drawingViews6.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks6 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks6 = drawingView6.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior6 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior6 = drawingView6.GenerativeBehavior
+
+drawingViewGenerativeBehavior6.Document = product1
+
+drawingViewGenerativeBehavior6.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView6.X = 594.5
+
+drawingView6.Y = 420.5
+
+drawingView6.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior6 = drawingView6.GenerativeBehavior
+
+drawingViewGenerativeBehavior6.Update
+
+drawingView6.Activate
+
+Set drawingDocument6 = CATIA.ActiveDocument
+
+drawingDocument6.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt6.CATDrawing"
+
+Dim specsAndGeomWindow6 As SpecsAndGeomWindow
+Set specsAndGeomWindow6 = CATIA.ActiveWindow
+
+specsAndGeomWindow6.Close
+
+Set drawingDocument6 = CATIA.ActiveDocument
+
+drawingDocument6.Close
+
+Dim selection6 As Selection
+Set selection6 = partDocument1.Selection
+
+Dim visPropertySet6 As VisPropertySet
+Set visPropertySet6 = selection6.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit12.Parent
+
+Dim bSTR16 As String
+bSTR16 = hybridShapeSplit12.Name
+
+selection6.Add hybridShapeSplit12
+
+Set visPropertySet6 = visPropertySet6.Parent
+
+Dim bSTR17 As String
+bSTR17 = visPropertySet6.Name
+
+Dim bSTR18 As String
+bSTR18 = visPropertySet6.Name
+
+visPropertySet6.SetShow 1
+
+selection6.Clear
+
+Dim hybridShapePlaneOffset13 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset13 = hybridShapes1.Item("平面.7")
+
+Dim reference19 As Reference
+Set reference19 = part1.CreateReferenceFromObject(hybridShapePlaneOffset13)
+
+Dim hybridShapePlaneOffset14 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset14 = hybridShapeFactory1.AddNewPlaneOffset(reference19, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset14
+
+part1.InWorkObject = hybridShapePlaneOffset14
+
+part1.Update
+
+Dim hybridShapeSplit13 As HybridShapeSplit
+Set hybridShapeSplit13 = hybridShapes1.Item("分割.7")
+
+Dim reference20 As Reference
+Set reference20 = part1.CreateReferenceFromObject(hybridShapeSplit13)
+
+Dim reference21 As Reference
+Set reference21 = part1.CreateReferenceFromObject(hybridShapePlaneOffset14)
+
+Dim hybridShapeSplit14 As HybridShapeSplit
+Set hybridShapeSplit14 = hybridShapeFactory1.AddNewHybridSplit(reference20, reference21, 1)
+
+hybridShapeFactory1.GSMVisibility reference20, 0
+
+hybridShapeSplit14.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit14
+
+part1.InWorkObject = hybridShapeSplit14
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument7 As DrawingDocument
+Set drawingDocument7 = documents1.Add("Drawing")
+
+drawingDocument7.Standard = catISO
+
+Dim drawingSheets7 As DrawingSheets
+Set drawingSheets7 = drawingDocument7.Sheets
+
+Dim drawingSheet7 As DrawingSheet
+Set drawingSheet7 = drawingSheets7.Item("页.1")
+
+drawingSheet7.PaperSize = catPaperA0
+
+drawingSheet7.[Scale] = 1#
+
+drawingSheet7.Orientation = catPaperLandscape
+
+Dim drawingViews7 As DrawingViews
+Set drawingViews7 = drawingSheet7.Views
+
+Dim drawingView7 As DrawingView
+Set drawingView7 = drawingViews7.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks7 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks7 = drawingView7.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior7 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior7 = drawingView7.GenerativeBehavior
+
+drawingViewGenerativeBehavior7.Document = product1
+
+drawingViewGenerativeBehavior7.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView7.X = 594.5
+
+drawingView7.Y = 420.5
+
+drawingView7.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior7 = drawingView7.GenerativeBehavior
+
+drawingViewGenerativeBehavior7.Update
+
+drawingView7.Activate
+
+Set drawingDocument7 = CATIA.ActiveDocument
+
+drawingDocument7.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt7.CATDrawing"
+
+Dim specsAndGeomWindow7 As SpecsAndGeomWindow
+Set specsAndGeomWindow7 = CATIA.ActiveWindow
+
+specsAndGeomWindow7.Close
+
+Set drawingDocument7 = CATIA.ActiveDocument
+
+drawingDocument7.Close
+
+Dim selection7 As Selection
+Set selection7 = partDocument1.Selection
+
+Dim visPropertySet7 As VisPropertySet
+Set visPropertySet7 = selection7.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit14.Parent
+
+Dim bSTR19 As String
+bSTR19 = hybridShapeSplit14.Name
+
+selection7.Add hybridShapeSplit14
+
+Set visPropertySet7 = visPropertySet7.Parent
+
+Dim bSTR20 As String
+bSTR20 = visPropertySet7.Name
+
+Dim bSTR21 As String
+bSTR21 = visPropertySet7.Name
+
+visPropertySet7.SetShow 1
+
+selection7.Clear
+
+Dim hybridShapePlaneOffset15 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset15 = hybridShapes1.Item("平面.8")
+
+Dim reference22 As Reference
+Set reference22 = part1.CreateReferenceFromObject(hybridShapePlaneOffset15)
+
+Dim hybridShapePlaneOffset16 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset16 = hybridShapeFactory1.AddNewPlaneOffset(reference22, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset16
+
+part1.InWorkObject = hybridShapePlaneOffset16
+
+part1.Update
+
+Dim hybridShapeSplit15 As HybridShapeSplit
+Set hybridShapeSplit15 = hybridShapes1.Item("分割.8")
+
+Dim reference23 As Reference
+Set reference23 = part1.CreateReferenceFromObject(hybridShapeSplit15)
+
+Dim reference24 As Reference
+Set reference24 = part1.CreateReferenceFromObject(hybridShapePlaneOffset16)
+
+Dim hybridShapeSplit16 As HybridShapeSplit
+Set hybridShapeSplit16 = hybridShapeFactory1.AddNewHybridSplit(reference23, reference24, 1)
+
+hybridShapeFactory1.GSMVisibility reference23, 0
+
+hybridShapeSplit16.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit16
+
+part1.InWorkObject = hybridShapeSplit16
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument8 As DrawingDocument
+Set drawingDocument8 = documents1.Add("Drawing")
+
+drawingDocument8.Standard = catISO
+
+Dim drawingSheets8 As DrawingSheets
+Set drawingSheets8 = drawingDocument8.Sheets
+
+Dim drawingSheet8 As DrawingSheet
+Set drawingSheet8 = drawingSheets8.Item("页.1")
+
+drawingSheet8.PaperSize = catPaperA0
+
+drawingSheet8.[Scale] = 1#
+
+drawingSheet8.Orientation = catPaperLandscape
+
+Dim drawingViews8 As DrawingViews
+Set drawingViews8 = drawingSheet8.Views
+
+Dim drawingView8 As DrawingView
+Set drawingView8 = drawingViews8.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks8 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks8 = drawingView8.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior8 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior8 = drawingView8.GenerativeBehavior
+
+drawingViewGenerativeBehavior8.Document = product1
+
+drawingViewGenerativeBehavior8.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView8.X = 594.5
+
+drawingView8.Y = 420.5
+
+drawingView8.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior8 = drawingView8.GenerativeBehavior
+
+drawingViewGenerativeBehavior8.Update
+
+drawingView8.Activate
+
+Set drawingDocument8 = CATIA.ActiveDocument
+
+drawingDocument8.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt8.CATDrawing"
+
+Dim specsAndGeomWindow8 As SpecsAndGeomWindow
+Set specsAndGeomWindow8 = CATIA.ActiveWindow
+
+specsAndGeomWindow8.Close
+
+Set drawingDocument8 = CATIA.ActiveDocument
+
+drawingDocument8.Close
+
+Dim selection8 As Selection
+Set selection8 = partDocument1.Selection
+
+Dim visPropertySet8 As VisPropertySet
+Set visPropertySet8 = selection8.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit16.Parent
+
+Dim bSTR22 As String
+bSTR22 = hybridShapeSplit16.Name
+
+selection8.Add hybridShapeSplit16
+
+Set visPropertySet8 = visPropertySet8.Parent
+
+Dim bSTR23 As String
+bSTR23 = visPropertySet8.Name
+
+Dim bSTR24 As String
+bSTR24 = visPropertySet8.Name
+
+visPropertySet8.SetShow 1
+
+selection8.Clear
+
+Dim hybridShapePlaneOffset17 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset17 = hybridShapes1.Item("平面.9")
+
+Dim reference25 As Reference
+Set reference25 = part1.CreateReferenceFromObject(hybridShapePlaneOffset17)
+
+Dim hybridShapePlaneOffset18 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset18 = hybridShapeFactory1.AddNewPlaneOffset(reference25, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset18
+
+part1.InWorkObject = hybridShapePlaneOffset18
+
+part1.Update
+
+Dim hybridShapeSplit17 As HybridShapeSplit
+Set hybridShapeSplit17 = hybridShapes1.Item("分割.9")
+
+Dim reference26 As Reference
+Set reference26 = part1.CreateReferenceFromObject(hybridShapeSplit17)
+
+Dim reference27 As Reference
+Set reference27 = part1.CreateReferenceFromObject(hybridShapePlaneOffset18)
+
+Dim hybridShapeSplit18 As HybridShapeSplit
+Set hybridShapeSplit18 = hybridShapeFactory1.AddNewHybridSplit(reference26, reference27, 1)
+
+hybridShapeFactory1.GSMVisibility reference26, 0
+
+hybridShapeSplit18.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit18
+
+part1.InWorkObject = hybridShapeSplit18
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument9 As DrawingDocument
+Set drawingDocument9 = documents1.Add("Drawing")
+
+drawingDocument9.Standard = catISO
+
+Dim drawingSheets9 As DrawingSheets
+Set drawingSheets9 = drawingDocument9.Sheets
+
+Dim drawingSheet9 As DrawingSheet
+Set drawingSheet9 = drawingSheets9.Item("页.1")
+
+drawingSheet9.PaperSize = catPaperA0
+
+drawingSheet9.[Scale] = 1#
+
+drawingSheet9.Orientation = catPaperLandscape
+
+Dim drawingViews9 As DrawingViews
+Set drawingViews9 = drawingSheet9.Views
+
+Dim drawingView9 As DrawingView
+Set drawingView9 = drawingViews9.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks9 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks9 = drawingView9.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior9 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior9 = drawingView9.GenerativeBehavior
+
+drawingViewGenerativeBehavior9.Document = product1
+
+drawingViewGenerativeBehavior9.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView9.X = 594.5
+
+drawingView9.Y = 420.5
+
+drawingView9.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior9 = drawingView9.GenerativeBehavior
+
+drawingViewGenerativeBehavior9.Update
+
+drawingView9.Activate
+
+Set drawingDocument9 = CATIA.ActiveDocument
+
+drawingDocument9.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt9.CATDrawing"
+
+Dim specsAndGeomWindow9 As SpecsAndGeomWindow
+Set specsAndGeomWindow9 = CATIA.ActiveWindow
+
+specsAndGeomWindow9.Close
+
+Set drawingDocument9 = CATIA.ActiveDocument
+
+drawingDocument9.Close
+
+Dim selection9 As Selection
+Set selection9 = partDocument1.Selection
+
+Dim visPropertySet9 As VisPropertySet
+Set visPropertySet9 = selection9.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit18.Parent
+
+Dim bSTR25 As String
+bSTR25 = hybridShapeSplit18.Name
+
+selection9.Add hybridShapeSplit18
+
+Set visPropertySet9 = visPropertySet9.Parent
+
+Dim bSTR26 As String
+bSTR26 = visPropertySet9.Name
+
+Dim bSTR27 As String
+bSTR27 = visPropertySet9.Name
+
+visPropertySet9.SetShow 1
+
+selection9.Clear
+
+Dim hybridShapePlaneOffset19 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset19 = hybridShapes1.Item("平面.10")
+
+Dim reference28 As Reference
+Set reference28 = part1.CreateReferenceFromObject(hybridShapePlaneOffset19)
+
+Dim hybridShapePlaneOffset20 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset20 = hybridShapeFactory1.AddNewPlaneOffset(reference28, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset20
+
+part1.InWorkObject = hybridShapePlaneOffset20
+
+part1.Update
+
+Dim hybridShapeSplit19 As HybridShapeSplit
+Set hybridShapeSplit19 = hybridShapes1.Item("分割.10")
+
+Dim reference29 As Reference
+Set reference29 = part1.CreateReferenceFromObject(hybridShapeSplit19)
+
+Dim reference30 As Reference
+Set reference30 = part1.CreateReferenceFromObject(hybridShapePlaneOffset20)
+
+Dim hybridShapeSplit20 As HybridShapeSplit
+Set hybridShapeSplit20 = hybridShapeFactory1.AddNewHybridSplit(reference29, reference30, 1)
+
+hybridShapeFactory1.GSMVisibility reference29, 0
+
+hybridShapeSplit20.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit20
+
+part1.InWorkObject = hybridShapeSplit20
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument10 As DrawingDocument
+Set drawingDocument10 = documents1.Add("Drawing")
+
+drawingDocument10.Standard = catISO
+
+Dim drawingSheets10 As DrawingSheets
+Set drawingSheets10 = drawingDocument10.Sheets
+
+Dim drawingSheet10 As DrawingSheet
+Set drawingSheet10 = drawingSheets10.Item("页.1")
+
+drawingSheet10.PaperSize = catPaperA0
+
+drawingSheet10.[Scale] = 1#
+
+drawingSheet10.Orientation = catPaperLandscape
+
+Dim drawingViews10 As DrawingViews
+Set drawingViews10 = drawingSheet10.Views
+
+Dim drawingView10 As DrawingView
+Set drawingView10 = drawingViews10.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks10 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks10 = drawingView10.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior10 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior10 = drawingView10.GenerativeBehavior
+
+drawingViewGenerativeBehavior10.Document = product1
+
+drawingViewGenerativeBehavior10.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView10.X = 594.5
+
+drawingView10.Y = 420.5
+
+drawingView10.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior10 = drawingView10.GenerativeBehavior
+
+drawingViewGenerativeBehavior10.Update
+
+drawingView10.Activate
+
+Set drawingDocument10 = CATIA.ActiveDocument
+
+drawingDocument10.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt10.CATDrawing"
+
+Dim specsAndGeomWindow10 As SpecsAndGeomWindow
+Set specsAndGeomWindow10 = CATIA.ActiveWindow
+
+specsAndGeomWindow10.Close
+
+Set drawingDocument10 = CATIA.ActiveDocument
+
+drawingDocument10.Close
+
+Dim selection10 As Selection
+Set selection10 = partDocument1.Selection
+
+Dim visPropertySet10 As VisPropertySet
+Set visPropertySet10 = selection10.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit20.Parent
+
+Dim bSTR28 As String
+bSTR28 = hybridShapeSplit20.Name
+
+selection10.Add hybridShapeSplit20
+
+Set visPropertySet10 = visPropertySet10.Parent
+
+Dim bSTR29 As String
+bSTR29 = visPropertySet10.Name
+
+Dim bSTR30 As String
+bSTR30 = visPropertySet10.Name
+
+visPropertySet10.SetShow 1
+
+selection10.Clear
+
+Dim hybridShapePlaneOffset21 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset21 = hybridShapes1.Item("平面.11")
+
+Dim reference31 As Reference
+Set reference31 = part1.CreateReferenceFromObject(hybridShapePlaneOffset21)
+
+Dim hybridShapePlaneOffset22 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset22 = hybridShapeFactory1.AddNewPlaneOffset(reference31, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset22
+
+part1.InWorkObject = hybridShapePlaneOffset22
+
+part1.Update
+
+Dim hybridShapeSplit21 As HybridShapeSplit
+Set hybridShapeSplit21 = hybridShapes1.Item("分割.11")
+
+Dim reference32 As Reference
+Set reference32 = part1.CreateReferenceFromObject(hybridShapeSplit21)
+
+Dim reference33 As Reference
+Set reference33 = part1.CreateReferenceFromObject(hybridShapePlaneOffset22)
+
+Dim hybridShapeSplit22 As HybridShapeSplit
+Set hybridShapeSplit22 = hybridShapeFactory1.AddNewHybridSplit(reference32, reference33, 1)
+
+hybridShapeFactory1.GSMVisibility reference32, 0
+
+hybridShapeSplit22.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit22
+
+part1.InWorkObject = hybridShapeSplit22
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument11 As DrawingDocument
+Set drawingDocument11 = documents1.Add("Drawing")
+
+drawingDocument11.Standard = catISO
+
+Dim drawingSheets11 As DrawingSheets
+Set drawingSheets11 = drawingDocument11.Sheets
+
+Dim drawingSheet11 As DrawingSheet
+Set drawingSheet11 = drawingSheets11.Item("页.1")
+
+drawingSheet11.PaperSize = catPaperA0
+
+drawingSheet11.[Scale] = 1#
+
+drawingSheet11.Orientation = catPaperLandscape
+
+Dim drawingViews11 As DrawingViews
+Set drawingViews11 = drawingSheet11.Views
+
+Dim drawingView11 As DrawingView
+Set drawingView11 = drawingViews11.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks11 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks11 = drawingView11.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior11 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior11 = drawingView11.GenerativeBehavior
+
+drawingViewGenerativeBehavior11.Document = product1
+
+drawingViewGenerativeBehavior11.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView11.X = 594.5
+
+drawingView11.Y = 420.5
+
+drawingView11.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior11 = drawingView11.GenerativeBehavior
+
+drawingViewGenerativeBehavior11.Update
+
+drawingView11.Activate
+
+Set drawingDocument11 = CATIA.ActiveDocument
+
+drawingDocument11.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt11.CATDrawing"
+
+Dim specsAndGeomWindow11 As SpecsAndGeomWindow
+Set specsAndGeomWindow11 = CATIA.ActiveWindow
+
+specsAndGeomWindow11.Close
+
+Set drawingDocument11 = CATIA.ActiveDocument
+
+drawingDocument11.Close
+
+Dim selection11 As Selection
+Set selection11 = partDocument1.Selection
+
+Dim visPropertySet11 As VisPropertySet
+Set visPropertySet11 = selection11.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit22.Parent
+
+Dim bSTR31 As String
+bSTR31 = hybridShapeSplit22.Name
+
+selection11.Add hybridShapeSplit22
+
+Set visPropertySet11 = visPropertySet11.Parent
+
+Dim bSTR32 As String
+bSTR32 = visPropertySet11.Name
+
+Dim bSTR33 As String
+bSTR33 = visPropertySet11.Name
+
+visPropertySet11.SetShow 1
+
+selection11.Clear
+
+Dim hybridShapePlaneOffset23 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset23 = hybridShapes1.Item("平面.12")
+
+Dim reference34 As Reference
+Set reference34 = part1.CreateReferenceFromObject(hybridShapePlaneOffset23)
+
+Dim hybridShapePlaneOffset24 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset24 = hybridShapeFactory1.AddNewPlaneOffset(reference34, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset24
+
+part1.InWorkObject = hybridShapePlaneOffset24
+
+part1.Update
+
+Dim hybridShapeSplit23 As HybridShapeSplit
+Set hybridShapeSplit23 = hybridShapes1.Item("分割.12")
+
+Dim reference35 As Reference
+Set reference35 = part1.CreateReferenceFromObject(hybridShapeSplit23)
+
+Dim reference36 As Reference
+Set reference36 = part1.CreateReferenceFromObject(hybridShapePlaneOffset24)
+
+Dim hybridShapeSplit24 As HybridShapeSplit
+Set hybridShapeSplit24 = hybridShapeFactory1.AddNewHybridSplit(reference35, reference36, 1)
+
+hybridShapeFactory1.GSMVisibility reference35, 0
+
+hybridShapeSplit24.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit24
+
+part1.InWorkObject = hybridShapeSplit24
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument12 As DrawingDocument
+Set drawingDocument12 = documents1.Add("Drawing")
+
+drawingDocument12.Standard = catISO
+
+Dim drawingSheets12 As DrawingSheets
+Set drawingSheets12 = drawingDocument12.Sheets
+
+Dim drawingSheet12 As DrawingSheet
+Set drawingSheet12 = drawingSheets12.Item("页.1")
+
+drawingSheet12.PaperSize = catPaperA0
+
+drawingSheet12.[Scale] = 1#
+
+drawingSheet12.Orientation = catPaperLandscape
+
+Dim drawingViews12 As DrawingViews
+Set drawingViews12 = drawingSheet12.Views
+
+Dim drawingView12 As DrawingView
+Set drawingView12 = drawingViews12.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks12 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks12 = drawingView12.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior12 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior12 = drawingView12.GenerativeBehavior
+
+drawingViewGenerativeBehavior12.Document = product1
+
+drawingViewGenerativeBehavior12.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView12.X = 594.5
+
+drawingView12.Y = 420.5
+
+drawingView12.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior12 = drawingView12.GenerativeBehavior
+
+drawingViewGenerativeBehavior12.Update
+
+drawingView12.Activate
+
+Set drawingDocument12 = CATIA.ActiveDocument
+
+drawingDocument12.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt12.CATDrawing"
+
+Dim specsAndGeomWindow12 As SpecsAndGeomWindow
+Set specsAndGeomWindow12 = CATIA.ActiveWindow
+
+specsAndGeomWindow12.Close
+
+Set drawingDocument12 = CATIA.ActiveDocument
+
+drawingDocument12.Close
+
+Dim selection12 As Selection
+Set selection12 = partDocument1.Selection
+
+Dim visPropertySet12 As VisPropertySet
+Set visPropertySet12 = selection12.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit24.Parent
+
+Dim bSTR34 As String
+bSTR34 = hybridShapeSplit24.Name
+
+selection12.Add hybridShapeSplit24
+
+Set visPropertySet12 = visPropertySet12.Parent
+
+Dim bSTR35 As String
+bSTR35 = visPropertySet12.Name
+
+Dim bSTR36 As String
+bSTR36 = visPropertySet12.Name
+
+visPropertySet12.SetShow 1
+
+selection12.Clear
+
+Dim hybridShapePlaneOffset25 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset25 = hybridShapes1.Item("平面.13")
+
+Dim reference37 As Reference
+Set reference37 = part1.CreateReferenceFromObject(hybridShapePlaneOffset25)
+
+Dim hybridShapePlaneOffset26 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset26 = hybridShapeFactory1.AddNewPlaneOffset(reference37, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset26
+
+part1.InWorkObject = hybridShapePlaneOffset26
+
+part1.Update
+
+Dim hybridShapeSplit25 As HybridShapeSplit
+Set hybridShapeSplit25 = hybridShapes1.Item("分割.13")
+
+Dim reference38 As Reference
+Set reference38 = part1.CreateReferenceFromObject(hybridShapeSplit25)
+
+Dim reference39 As Reference
+Set reference39 = part1.CreateReferenceFromObject(hybridShapePlaneOffset26)
+
+Dim hybridShapeSplit26 As HybridShapeSplit
+Set hybridShapeSplit26 = hybridShapeFactory1.AddNewHybridSplit(reference38, reference39, 1)
+
+hybridShapeFactory1.GSMVisibility reference38, 0
+
+hybridShapeSplit26.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit26
+
+part1.InWorkObject = hybridShapeSplit26
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument13 As DrawingDocument
+Set drawingDocument13 = documents1.Add("Drawing")
+
+drawingDocument13.Standard = catISO
+
+Dim drawingSheets13 As DrawingSheets
+Set drawingSheets13 = drawingDocument13.Sheets
+
+Dim drawingSheet13 As DrawingSheet
+Set drawingSheet13 = drawingSheets13.Item("页.1")
+
+drawingSheet13.PaperSize = catPaperA0
+
+drawingSheet13.[Scale] = 1#
+
+drawingSheet13.Orientation = catPaperLandscape
+
+Dim drawingViews13 As DrawingViews
+Set drawingViews13 = drawingSheet13.Views
+
+Dim drawingView13 As DrawingView
+Set drawingView13 = drawingViews13.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks13 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks13 = drawingView13.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior13 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior13 = drawingView13.GenerativeBehavior
+
+drawingViewGenerativeBehavior13.Document = product1
+
+drawingViewGenerativeBehavior13.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView13.X = 594.5
+
+drawingView13.Y = 420.5
+
+drawingView13.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior13 = drawingView13.GenerativeBehavior
+
+drawingViewGenerativeBehavior13.Update
+
+drawingView13.Activate
+
+Set drawingDocument13 = CATIA.ActiveDocument
+
+drawingDocument13.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt13.CATDrawing"
+
+Dim specsAndGeomWindow13 As SpecsAndGeomWindow
+Set specsAndGeomWindow13 = CATIA.ActiveWindow
+
+specsAndGeomWindow13.Close
+
+Set drawingDocument13 = CATIA.ActiveDocument
+
+drawingDocument13.Close
+
+Dim selection13 As Selection
+Set selection13 = partDocument1.Selection
+
+Dim visPropertySet13 As VisPropertySet
+Set visPropertySet13 = selection13.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit26.Parent
+
+Dim bSTR37 As String
+bSTR37 = hybridShapeSplit26.Name
+
+selection13.Add hybridShapeSplit26
+
+Set visPropertySet13 = visPropertySet13.Parent
+
+Dim bSTR38 As String
+bSTR38 = visPropertySet13.Name
+
+Dim bSTR39 As String
+bSTR39 = visPropertySet13.Name
+
+visPropertySet13.SetShow 1
+
+selection13.Clear
+
+Dim hybridShapePlaneOffset27 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset27 = hybridShapes1.Item("平面.14")
+
+Dim reference40 As Reference
+Set reference40 = part1.CreateReferenceFromObject(hybridShapePlaneOffset27)
+
+Dim hybridShapePlaneOffset28 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset28 = hybridShapeFactory1.AddNewPlaneOffset(reference40, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset28
+
+part1.InWorkObject = hybridShapePlaneOffset28
+
+part1.Update
+
+Dim hybridShapeSplit27 As HybridShapeSplit
+Set hybridShapeSplit27 = hybridShapes1.Item("分割.14")
+
+Dim reference41 As Reference
+Set reference41 = part1.CreateReferenceFromObject(hybridShapeSplit27)
+
+Dim reference42 As Reference
+Set reference42 = part1.CreateReferenceFromObject(hybridShapePlaneOffset28)
+
+Dim hybridShapeSplit28 As HybridShapeSplit
+Set hybridShapeSplit28 = hybridShapeFactory1.AddNewHybridSplit(reference41, reference42, 1)
+
+hybridShapeFactory1.GSMVisibility reference41, 0
+
+hybridShapeSplit28.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit28
+
+part1.InWorkObject = hybridShapeSplit28
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument14 As DrawingDocument
+Set drawingDocument14 = documents1.Add("Drawing")
+
+drawingDocument14.Standard = catISO
+
+Dim drawingSheets14 As DrawingSheets
+Set drawingSheets14 = drawingDocument14.Sheets
+
+Dim drawingSheet14 As DrawingSheet
+Set drawingSheet14 = drawingSheets14.Item("页.1")
+
+drawingSheet14.PaperSize = catPaperA0
+
+drawingSheet14.[Scale] = 1#
+
+drawingSheet14.Orientation = catPaperLandscape
+
+Dim drawingViews14 As DrawingViews
+Set drawingViews14 = drawingSheet14.Views
+
+Dim drawingView14 As DrawingView
+Set drawingView14 = drawingViews14.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks14 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks14 = drawingView14.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior14 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior14 = drawingView14.GenerativeBehavior
+
+drawingViewGenerativeBehavior14.Document = product1
+
+drawingViewGenerativeBehavior14.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView14.X = 594.5
+
+drawingView14.Y = 420.5
+
+drawingView14.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior14 = drawingView14.GenerativeBehavior
+
+drawingViewGenerativeBehavior14.Update
+
+drawingView14.Activate
+
+Set drawingDocument14 = CATIA.ActiveDocument
+
+drawingDocument14.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt14.CATDrawing"
+
+Dim specsAndGeomWindow14 As SpecsAndGeomWindow
+Set specsAndGeomWindow14 = CATIA.ActiveWindow
+
+specsAndGeomWindow14.Close
+
+Set drawingDocument14 = CATIA.ActiveDocument
+
+drawingDocument14.Close
+
+Dim selection14 As Selection
+Set selection14 = partDocument1.Selection
+
+Dim visPropertySet14 As VisPropertySet
+Set visPropertySet14 = selection14.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit28.Parent
+
+Dim bSTR40 As String
+bSTR40 = hybridShapeSplit28.Name
+
+selection14.Add hybridShapeSplit28
+
+Set visPropertySet14 = visPropertySet14.Parent
+
+Dim bSTR41 As String
+bSTR41 = visPropertySet14.Name
+
+Dim bSTR42 As String
+bSTR42 = visPropertySet14.Name
+
+visPropertySet14.SetShow 1
+
+selection14.Clear
+
+Dim hybridShapePlaneOffset29 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset29 = hybridShapes1.Item("平面.15")
+
+Dim reference43 As Reference
+Set reference43 = part1.CreateReferenceFromObject(hybridShapePlaneOffset29)
+
+Dim hybridShapePlaneOffset30 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset30 = hybridShapeFactory1.AddNewPlaneOffset(reference43, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset30
+
+part1.InWorkObject = hybridShapePlaneOffset30
+
+part1.Update
+
+Dim hybridShapeSplit29 As HybridShapeSplit
+Set hybridShapeSplit29 = hybridShapes1.Item("分割.15")
+
+Dim reference44 As Reference
+Set reference44 = part1.CreateReferenceFromObject(hybridShapeSplit29)
+
+Dim reference45 As Reference
+Set reference45 = part1.CreateReferenceFromObject(hybridShapePlaneOffset30)
+
+Dim hybridShapeSplit30 As HybridShapeSplit
+Set hybridShapeSplit30 = hybridShapeFactory1.AddNewHybridSplit(reference44, reference45, 1)
+
+hybridShapeFactory1.GSMVisibility reference44, 0
+
+hybridShapeSplit30.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit30
+
+part1.InWorkObject = hybridShapeSplit30
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument15 As DrawingDocument
+Set drawingDocument15 = documents1.Add("Drawing")
+
+drawingDocument15.Standard = catISO
+
+Dim drawingSheets15 As DrawingSheets
+Set drawingSheets15 = drawingDocument15.Sheets
+
+Dim drawingSheet15 As DrawingSheet
+Set drawingSheet15 = drawingSheets15.Item("页.1")
+
+drawingSheet15.PaperSize = catPaperA0
+
+drawingSheet15.[Scale] = 1#
+
+drawingSheet15.Orientation = catPaperLandscape
+
+Dim drawingViews15 As DrawingViews
+Set drawingViews15 = drawingSheet15.Views
+
+Dim drawingView15 As DrawingView
+Set drawingView15 = drawingViews15.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks15 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks15 = drawingView15.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior15 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior15 = drawingView15.GenerativeBehavior
+
+drawingViewGenerativeBehavior15.Document = product1
+
+drawingViewGenerativeBehavior15.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView15.X = 594.5
+
+drawingView15.Y = 420.5
+
+drawingView15.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior15 = drawingView15.GenerativeBehavior
+
+drawingViewGenerativeBehavior15.Update
+
+drawingView15.Activate
+
+Set drawingDocument15 = CATIA.ActiveDocument
+
+drawingDocument15.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt15.CATDrawing"
+
+Dim specsAndGeomWindow15 As SpecsAndGeomWindow
+Set specsAndGeomWindow15 = CATIA.ActiveWindow
+
+specsAndGeomWindow15.Close
+
+Set drawingDocument15 = CATIA.ActiveDocument
+
+drawingDocument15.Close
+
+Dim selection15 As Selection
+Set selection15 = partDocument1.Selection
+
+Dim visPropertySet15 As VisPropertySet
+Set visPropertySet15 = selection15.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit30.Parent
+
+Dim bSTR43 As String
+bSTR43 = hybridShapeSplit30.Name
+
+selection15.Add hybridShapeSplit30
+
+Set visPropertySet15 = visPropertySet15.Parent
+
+Dim bSTR44 As String
+bSTR44 = visPropertySet15.Name
+
+Dim bSTR45 As String
+bSTR45 = visPropertySet15.Name
+
+visPropertySet15.SetShow 1
+
+selection15.Clear
+
+Dim hybridShapePlaneOffset31 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset31 = hybridShapes1.Item("平面.16")
+
+Dim reference46 As Reference
+Set reference46 = part1.CreateReferenceFromObject(hybridShapePlaneOffset31)
+
+Dim hybridShapePlaneOffset32 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset32 = hybridShapeFactory1.AddNewPlaneOffset(reference46, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset32
+
+part1.InWorkObject = hybridShapePlaneOffset32
+
+part1.Update
+
+Dim hybridShapeSplit31 As HybridShapeSplit
+Set hybridShapeSplit31 = hybridShapes1.Item("分割.16")
+
+Dim reference47 As Reference
+Set reference47 = part1.CreateReferenceFromObject(hybridShapeSplit31)
+
+Dim reference48 As Reference
+Set reference48 = part1.CreateReferenceFromObject(hybridShapePlaneOffset32)
+
+Dim hybridShapeSplit32 As HybridShapeSplit
+Set hybridShapeSplit32 = hybridShapeFactory1.AddNewHybridSplit(reference47, reference48, 1)
+
+hybridShapeFactory1.GSMVisibility reference47, 0
+
+hybridShapeSplit32.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit32
+
+part1.InWorkObject = hybridShapeSplit32
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument16 As DrawingDocument
+Set drawingDocument16 = documents1.Add("Drawing")
+
+drawingDocument16.Standard = catISO
+
+Dim drawingSheets16 As DrawingSheets
+Set drawingSheets16 = drawingDocument16.Sheets
+
+Dim drawingSheet16 As DrawingSheet
+Set drawingSheet16 = drawingSheets16.Item("页.1")
+
+drawingSheet16.PaperSize = catPaperA0
+
+drawingSheet16.[Scale] = 1#
+
+drawingSheet16.Orientation = catPaperLandscape
+
+Dim drawingViews16 As DrawingViews
+Set drawingViews16 = drawingSheet16.Views
+
+Dim drawingView16 As DrawingView
+Set drawingView16 = drawingViews16.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks16 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks16 = drawingView16.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior16 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior16 = drawingView16.GenerativeBehavior
+
+drawingViewGenerativeBehavior16.Document = product1
+
+drawingViewGenerativeBehavior16.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView16.X = 594.5
+
+drawingView16.Y = 420.5
+
+drawingView16.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior16 = drawingView16.GenerativeBehavior
+
+drawingViewGenerativeBehavior16.Update
+
+drawingView16.Activate
+
+Set drawingDocument16 = CATIA.ActiveDocument
+
+drawingDocument16.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt16.CATDrawing"
+
+Dim specsAndGeomWindow16 As SpecsAndGeomWindow
+Set specsAndGeomWindow16 = CATIA.ActiveWindow
+
+specsAndGeomWindow16.Close
+
+Set drawingDocument16 = CATIA.ActiveDocument
+
+drawingDocument16.Close
+
+Dim selection16 As Selection
+Set selection16 = partDocument1.Selection
+
+Dim visPropertySet16 As VisPropertySet
+Set visPropertySet16 = selection16.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit32.Parent
+
+Dim bSTR46 As String
+bSTR46 = hybridShapeSplit32.Name
+
+selection16.Add hybridShapeSplit32
+
+Set visPropertySet16 = visPropertySet16.Parent
+
+Dim bSTR47 As String
+bSTR47 = visPropertySet16.Name
+
+Dim bSTR48 As String
+bSTR48 = visPropertySet16.Name
+
+visPropertySet16.SetShow 1
+
+selection16.Clear
+
+Dim hybridShapePlaneOffset33 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset33 = hybridShapes1.Item("平面.17")
+
+Dim reference49 As Reference
+Set reference49 = part1.CreateReferenceFromObject(hybridShapePlaneOffset33)
+
+Dim hybridShapePlaneOffset34 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset34 = hybridShapeFactory1.AddNewPlaneOffset(reference49, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset34
+
+part1.InWorkObject = hybridShapePlaneOffset34
+
+part1.Update
+
+Dim hybridShapeSplit33 As HybridShapeSplit
+Set hybridShapeSplit33 = hybridShapes1.Item("分割.17")
+
+Dim reference50 As Reference
+Set reference50 = part1.CreateReferenceFromObject(hybridShapeSplit33)
+
+Dim reference51 As Reference
+Set reference51 = part1.CreateReferenceFromObject(hybridShapePlaneOffset34)
+
+Dim hybridShapeSplit34 As HybridShapeSplit
+Set hybridShapeSplit34 = hybridShapeFactory1.AddNewHybridSplit(reference50, reference51, 1)
+
+hybridShapeFactory1.GSMVisibility reference50, 0
+
+hybridShapeSplit34.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit34
+
+part1.InWorkObject = hybridShapeSplit34
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument17 As DrawingDocument
+Set drawingDocument17 = documents1.Add("Drawing")
+
+drawingDocument17.Standard = catISO
+
+Dim drawingSheets17 As DrawingSheets
+Set drawingSheets17 = drawingDocument17.Sheets
+
+Dim drawingSheet17 As DrawingSheet
+Set drawingSheet17 = drawingSheets17.Item("页.1")
+
+drawingSheet17.PaperSize = catPaperA0
+
+drawingSheet17.[Scale] = 1#
+
+drawingSheet17.Orientation = catPaperLandscape
+
+Dim drawingViews17 As DrawingViews
+Set drawingViews17 = drawingSheet17.Views
+
+Dim drawingView17 As DrawingView
+Set drawingView17 = drawingViews17.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks17 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks17 = drawingView17.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior17 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior17 = drawingView17.GenerativeBehavior
+
+drawingViewGenerativeBehavior17.Document = product1
+
+drawingViewGenerativeBehavior17.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView17.X = 594.5
+
+drawingView17.Y = 420.5
+
+drawingView17.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior17 = drawingView17.GenerativeBehavior
+
+drawingViewGenerativeBehavior17.Update
+
+drawingView17.Activate
+
+Set drawingDocument17 = CATIA.ActiveDocument
+
+drawingDocument17.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt17.CATDrawing"
+
+Dim specsAndGeomWindow17 As SpecsAndGeomWindow
+Set specsAndGeomWindow17 = CATIA.ActiveWindow
+
+specsAndGeomWindow17.Close
+
+Set drawingDocument17 = CATIA.ActiveDocument
+
+drawingDocument17.Close
+
+Dim selection17 As Selection
+Set selection17 = partDocument1.Selection
+
+Dim visPropertySet17 As VisPropertySet
+Set visPropertySet17 = selection17.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit34.Parent
+
+Dim bSTR49 As String
+bSTR49 = hybridShapeSplit34.Name
+
+selection17.Add hybridShapeSplit34
+
+Set visPropertySet17 = visPropertySet17.Parent
+
+Dim bSTR50 As String
+bSTR50 = visPropertySet17.Name
+
+Dim bSTR51 As String
+bSTR51 = visPropertySet17.Name
+
+visPropertySet17.SetShow 1
+
+selection17.Clear
+
+Dim hybridShapePlaneOffset35 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset35 = hybridShapes1.Item("平面.18")
+
+Dim reference52 As Reference
+Set reference52 = part1.CreateReferenceFromObject(hybridShapePlaneOffset35)
+
+Dim hybridShapePlaneOffset36 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset36 = hybridShapeFactory1.AddNewPlaneOffset(reference52, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset36
+
+part1.InWorkObject = hybridShapePlaneOffset36
+
+part1.Update
+
+Dim hybridShapeSplit35 As HybridShapeSplit
+Set hybridShapeSplit35 = hybridShapes1.Item("分割.18")
+
+Dim reference53 As Reference
+Set reference53 = part1.CreateReferenceFromObject(hybridShapeSplit35)
+
+Dim reference54 As Reference
+Set reference54 = part1.CreateReferenceFromObject(hybridShapePlaneOffset36)
+
+Dim hybridShapeSplit36 As HybridShapeSplit
+Set hybridShapeSplit36 = hybridShapeFactory1.AddNewHybridSplit(reference53, reference54, 1)
+
+hybridShapeFactory1.GSMVisibility reference53, 0
+
+hybridShapeSplit36.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit36
+
+part1.InWorkObject = hybridShapeSplit36
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument18 As DrawingDocument
+Set drawingDocument18 = documents1.Add("Drawing")
+
+drawingDocument18.Standard = catISO
+
+Dim drawingSheets18 As DrawingSheets
+Set drawingSheets18 = drawingDocument18.Sheets
+
+Dim drawingSheet18 As DrawingSheet
+Set drawingSheet18 = drawingSheets18.Item("页.1")
+
+drawingSheet18.PaperSize = catPaperA0
+
+drawingSheet18.[Scale] = 1#
+
+drawingSheet18.Orientation = catPaperLandscape
+
+Dim drawingViews18 As DrawingViews
+Set drawingViews18 = drawingSheet18.Views
+
+Dim drawingView18 As DrawingView
+Set drawingView18 = drawingViews18.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks18 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks18 = drawingView18.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior18 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior18 = drawingView18.GenerativeBehavior
+
+drawingViewGenerativeBehavior18.Document = product1
+
+drawingViewGenerativeBehavior18.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView18.X = 594.5
+
+drawingView18.Y = 420.5
+
+drawingView18.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior18 = drawingView18.GenerativeBehavior
+
+drawingViewGenerativeBehavior18.Update
+
+drawingView18.Activate
+
+Set drawingDocument18 = CATIA.ActiveDocument
+
+drawingDocument18.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt18.CATDrawing"
+
+Dim specsAndGeomWindow18 As SpecsAndGeomWindow
+Set specsAndGeomWindow18 = CATIA.ActiveWindow
+
+specsAndGeomWindow18.Close
+
+Set drawingDocument18 = CATIA.ActiveDocument
+
+drawingDocument18.Close
+
+Dim selection18 As Selection
+Set selection18 = partDocument1.Selection
+
+Dim visPropertySet18 As VisPropertySet
+Set visPropertySet18 = selection18.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit36.Parent
+
+Dim bSTR52 As String
+bSTR52 = hybridShapeSplit36.Name
+
+selection18.Add hybridShapeSplit36
+
+Set visPropertySet18 = visPropertySet18.Parent
+
+Dim bSTR53 As String
+bSTR53 = visPropertySet18.Name
+
+Dim bSTR54 As String
+bSTR54 = visPropertySet18.Name
+
+visPropertySet18.SetShow 1
+
+selection18.Clear
+
+Dim hybridShapePlaneOffset37 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset37 = hybridShapes1.Item("平面.19")
+
+Dim reference55 As Reference
+Set reference55 = part1.CreateReferenceFromObject(hybridShapePlaneOffset37)
+
+Dim hybridShapePlaneOffset38 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset38 = hybridShapeFactory1.AddNewPlaneOffset(reference55, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset38
+
+part1.InWorkObject = hybridShapePlaneOffset38
+
+part1.Update
+
+Dim hybridShapeSplit37 As HybridShapeSplit
+Set hybridShapeSplit37 = hybridShapes1.Item("分割.19")
+
+Dim reference56 As Reference
+Set reference56 = part1.CreateReferenceFromObject(hybridShapeSplit37)
+
+Dim reference57 As Reference
+Set reference57 = part1.CreateReferenceFromObject(hybridShapePlaneOffset38)
+
+Dim hybridShapeSplit38 As HybridShapeSplit
+Set hybridShapeSplit38 = hybridShapeFactory1.AddNewHybridSplit(reference56, reference57, 1)
+
+hybridShapeFactory1.GSMVisibility reference56, 0
+
+hybridShapeSplit38.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit38
+
+part1.InWorkObject = hybridShapeSplit38
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument19 As DrawingDocument
+Set drawingDocument19 = documents1.Add("Drawing")
+
+drawingDocument19.Standard = catISO
+
+Dim drawingSheets19 As DrawingSheets
+Set drawingSheets19 = drawingDocument19.Sheets
+
+Dim drawingSheet19 As DrawingSheet
+Set drawingSheet19 = drawingSheets19.Item("页.1")
+
+drawingSheet19.PaperSize = catPaperA0
+
+drawingSheet19.[Scale] = 1#
+
+drawingSheet19.Orientation = catPaperLandscape
+
+Dim drawingViews19 As DrawingViews
+Set drawingViews19 = drawingSheet19.Views
+
+Dim drawingView19 As DrawingView
+Set drawingView19 = drawingViews19.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks19 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks19 = drawingView19.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior19 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior19 = drawingView19.GenerativeBehavior
+
+drawingViewGenerativeBehavior19.Document = product1
+
+drawingViewGenerativeBehavior19.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView19.X = 594.5
+
+drawingView19.Y = 420.5
+
+drawingView19.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior19 = drawingView19.GenerativeBehavior
+
+drawingViewGenerativeBehavior19.Update
+
+drawingView19.Activate
+
+Set drawingDocument19 = CATIA.ActiveDocument
+
+drawingDocument19.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt19.CATDrawing"
+
+Dim specsAndGeomWindow19 As SpecsAndGeomWindow
+Set specsAndGeomWindow19 = CATIA.ActiveWindow
+
+specsAndGeomWindow19.Close
+
+Set drawingDocument19 = CATIA.ActiveDocument
+
+drawingDocument19.Close
+
+Dim selection19 As Selection
+Set selection19 = partDocument1.Selection
+
+Dim visPropertySet19 As VisPropertySet
+Set visPropertySet19 = selection19.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit38.Parent
+
+Dim bSTR55 As String
+bSTR55 = hybridShapeSplit38.Name
+
+selection19.Add hybridShapeSplit38
+
+Set visPropertySet19 = visPropertySet19.Parent
+
+Dim bSTR56 As String
+bSTR56 = visPropertySet19.Name
+
+Dim bSTR57 As String
+bSTR57 = visPropertySet19.Name
+
+visPropertySet19.SetShow 1
+
+selection19.Clear
+
+Dim hybridShapePlaneOffset39 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset39 = hybridShapes1.Item("平面.20")
+
+Dim reference58 As Reference
+Set reference58 = part1.CreateReferenceFromObject(hybridShapePlaneOffset39)
+
+Dim hybridShapePlaneOffset40 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset40 = hybridShapeFactory1.AddNewPlaneOffset(reference58, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset40
+
+part1.InWorkObject = hybridShapePlaneOffset40
+
+part1.Update
+
+Dim hybridShapeSplit39 As HybridShapeSplit
+Set hybridShapeSplit39 = hybridShapes1.Item("分割.20")
+
+Dim reference59 As Reference
+Set reference59 = part1.CreateReferenceFromObject(hybridShapeSplit39)
+
+Dim reference60 As Reference
+Set reference60 = part1.CreateReferenceFromObject(hybridShapePlaneOffset40)
+
+Dim hybridShapeSplit40 As HybridShapeSplit
+Set hybridShapeSplit40 = hybridShapeFactory1.AddNewHybridSplit(reference59, reference60, 1)
+
+hybridShapeFactory1.GSMVisibility reference59, 0
+
+hybridShapeSplit40.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit40
+
+part1.InWorkObject = hybridShapeSplit40
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument20 As DrawingDocument
+Set drawingDocument20 = documents1.Add("Drawing")
+
+drawingDocument20.Standard = catISO
+
+Dim drawingSheets20 As DrawingSheets
+Set drawingSheets20 = drawingDocument20.Sheets
+
+Dim drawingSheet20 As DrawingSheet
+Set drawingSheet20 = drawingSheets20.Item("页.1")
+
+drawingSheet20.PaperSize = catPaperA0
+
+drawingSheet20.[Scale] = 1#
+
+drawingSheet20.Orientation = catPaperLandscape
+
+Dim drawingViews20 As DrawingViews
+Set drawingViews20 = drawingSheet20.Views
+
+Dim drawingView20 As DrawingView
+Set drawingView20 = drawingViews20.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks20 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks20 = drawingView20.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior20 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior20 = drawingView20.GenerativeBehavior
+
+drawingViewGenerativeBehavior20.Document = product1
+
+drawingViewGenerativeBehavior20.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView20.X = 594.5
+
+drawingView20.Y = 420.5
+
+drawingView20.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior20 = drawingView20.GenerativeBehavior
+
+drawingViewGenerativeBehavior20.Update
+
+drawingView20.Activate
+
+Set drawingDocument20 = CATIA.ActiveDocument
+
+drawingDocument20.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt20.CATDrawing"
+
+Dim specsAndGeomWindow20 As SpecsAndGeomWindow
+Set specsAndGeomWindow20 = CATIA.ActiveWindow
+
+specsAndGeomWindow20.Close
+
+Set drawingDocument20 = CATIA.ActiveDocument
+
+drawingDocument20.Close
+
+Dim selection20 As Selection
+Set selection20 = partDocument1.Selection
+
+Dim visPropertySet20 As VisPropertySet
+Set visPropertySet20 = selection20.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit40.Parent
+
+Dim bSTR58 As String
+bSTR58 = hybridShapeSplit40.Name
+
+selection20.Add hybridShapeSplit40
+
+Set visPropertySet20 = visPropertySet20.Parent
+
+Dim bSTR59 As String
+bSTR59 = visPropertySet20.Name
+
+Dim bSTR60 As String
+bSTR60 = visPropertySet20.Name
+
+visPropertySet20.SetShow 1
+
+selection20.Clear
+
+Dim hybridShapePlaneOffset41 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset41 = hybridShapes1.Item("平面.21")
+
+Dim reference61 As Reference
+Set reference61 = part1.CreateReferenceFromObject(hybridShapePlaneOffset41)
+
+Dim hybridShapePlaneOffset42 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset42 = hybridShapeFactory1.AddNewPlaneOffset(reference61, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset42
+
+part1.InWorkObject = hybridShapePlaneOffset42
+
+part1.Update
+
+Dim hybridShapeSplit41 As HybridShapeSplit
+Set hybridShapeSplit41 = hybridShapes1.Item("分割.21")
+
+Dim reference62 As Reference
+Set reference62 = part1.CreateReferenceFromObject(hybridShapeSplit41)
+
+Dim reference63 As Reference
+Set reference63 = part1.CreateReferenceFromObject(hybridShapePlaneOffset42)
+
+Dim hybridShapeSplit42 As HybridShapeSplit
+Set hybridShapeSplit42 = hybridShapeFactory1.AddNewHybridSplit(reference62, reference63, 1)
+
+hybridShapeFactory1.GSMVisibility reference62, 0
+
+hybridShapeSplit42.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit42
+
+part1.InWorkObject = hybridShapeSplit42
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument21 As DrawingDocument
+Set drawingDocument21 = documents1.Add("Drawing")
+
+drawingDocument21.Standard = catISO
+
+Dim drawingSheets21 As DrawingSheets
+Set drawingSheets21 = drawingDocument21.Sheets
+
+Dim drawingSheet21 As DrawingSheet
+Set drawingSheet21 = drawingSheets21.Item("页.1")
+
+drawingSheet21.PaperSize = catPaperA0
+
+drawingSheet21.[Scale] = 1#
+
+drawingSheet21.Orientation = catPaperLandscape
+
+Dim drawingViews21 As DrawingViews
+Set drawingViews21 = drawingSheet21.Views
+
+Dim drawingView21 As DrawingView
+Set drawingView21 = drawingViews21.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks21 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks21 = drawingView21.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior21 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior21 = drawingView21.GenerativeBehavior
+
+drawingViewGenerativeBehavior21.Document = product1
+
+drawingViewGenerativeBehavior21.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView21.X = 594.5
+
+drawingView21.Y = 420.5
+
+drawingView21.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior21 = drawingView21.GenerativeBehavior
+
+drawingViewGenerativeBehavior21.Update
+
+drawingView21.Activate
+
+Set drawingDocument21 = CATIA.ActiveDocument
+
+drawingDocument21.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt21.CATDrawing"
+
+Dim specsAndGeomWindow21 As SpecsAndGeomWindow
+Set specsAndGeomWindow21 = CATIA.ActiveWindow
+
+specsAndGeomWindow21.Close
+
+Set drawingDocument21 = CATIA.ActiveDocument
+
+drawingDocument21.Close
+
+Dim selection21 As Selection
+Set selection21 = partDocument1.Selection
+
+Dim visPropertySet21 As VisPropertySet
+Set visPropertySet21 = selection21.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit42.Parent
+
+Dim bSTR61 As String
+bSTR61 = hybridShapeSplit42.Name
+
+selection21.Add hybridShapeSplit42
+
+Set visPropertySet21 = visPropertySet21.Parent
+
+Dim bSTR62 As String
+bSTR62 = visPropertySet21.Name
+
+Dim bSTR63 As String
+bSTR63 = visPropertySet21.Name
+
+visPropertySet21.SetShow 1
+
+selection21.Clear
+
+Dim hybridShapePlaneOffset43 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset43 = hybridShapes1.Item("平面.22")
+
+Dim reference64 As Reference
+Set reference64 = part1.CreateReferenceFromObject(hybridShapePlaneOffset43)
+
+Dim hybridShapePlaneOffset44 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset44 = hybridShapeFactory1.AddNewPlaneOffset(reference64, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset44
+
+part1.InWorkObject = hybridShapePlaneOffset44
+
+part1.Update
+
+Dim hybridShapeSplit43 As HybridShapeSplit
+Set hybridShapeSplit43 = hybridShapes1.Item("分割.22")
+
+Dim reference65 As Reference
+Set reference65 = part1.CreateReferenceFromObject(hybridShapeSplit43)
+
+Dim reference66 As Reference
+Set reference66 = part1.CreateReferenceFromObject(hybridShapePlaneOffset44)
+
+Dim hybridShapeSplit44 As HybridShapeSplit
+Set hybridShapeSplit44 = hybridShapeFactory1.AddNewHybridSplit(reference65, reference66, 1)
+
+hybridShapeFactory1.GSMVisibility reference65, 0
+
+hybridShapeSplit44.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit44
+
+part1.InWorkObject = hybridShapeSplit44
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument22 As DrawingDocument
+Set drawingDocument22 = documents1.Add("Drawing")
+
+drawingDocument22.Standard = catISO
+
+Dim drawingSheets22 As DrawingSheets
+Set drawingSheets22 = drawingDocument22.Sheets
+
+Dim drawingSheet22 As DrawingSheet
+Set drawingSheet22 = drawingSheets22.Item("页.1")
+
+drawingSheet22.PaperSize = catPaperA0
+
+drawingSheet22.[Scale] = 1#
+
+drawingSheet22.Orientation = catPaperLandscape
+
+Dim drawingViews22 As DrawingViews
+Set drawingViews22 = drawingSheet22.Views
+
+Dim drawingView22 As DrawingView
+Set drawingView22 = drawingViews22.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks22 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks22 = drawingView22.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior22 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior22 = drawingView22.GenerativeBehavior
+
+drawingViewGenerativeBehavior22.Document = product1
+
+drawingViewGenerativeBehavior22.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView22.X = 594.5
+
+drawingView22.Y = 420.5
+
+drawingView22.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior22 = drawingView22.GenerativeBehavior
+
+drawingViewGenerativeBehavior22.Update
+
+drawingView22.Activate
+
+Set drawingDocument22 = CATIA.ActiveDocument
+
+drawingDocument22.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt22.CATDrawing"
+
+Dim specsAndGeomWindow22 As SpecsAndGeomWindow
+Set specsAndGeomWindow22 = CATIA.ActiveWindow
+
+specsAndGeomWindow22.Close
+
+Set drawingDocument22 = CATIA.ActiveDocument
+
+drawingDocument22.Close
+
+Dim selection22 As Selection
+Set selection22 = partDocument1.Selection
+
+Dim visPropertySet22 As VisPropertySet
+Set visPropertySet22 = selection22.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit44.Parent
+
+Dim bSTR64 As String
+bSTR64 = hybridShapeSplit44.Name
+
+selection22.Add hybridShapeSplit44
+
+Set visPropertySet22 = visPropertySet22.Parent
+
+Dim bSTR65 As String
+bSTR65 = visPropertySet22.Name
+
+Dim bSTR66 As String
+bSTR66 = visPropertySet22.Name
+
+visPropertySet22.SetShow 1
+
+selection22.Clear
+
+Dim hybridShapePlaneOffset45 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset45 = hybridShapes1.Item("平面.23")
+
+Dim reference67 As Reference
+Set reference67 = part1.CreateReferenceFromObject(hybridShapePlaneOffset45)
+
+Dim hybridShapePlaneOffset46 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset46 = hybridShapeFactory1.AddNewPlaneOffset(reference67, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset46
+
+part1.InWorkObject = hybridShapePlaneOffset46
+
+part1.Update
+
+Dim hybridShapeSplit45 As HybridShapeSplit
+Set hybridShapeSplit45 = hybridShapes1.Item("分割.23")
+
+Dim reference68 As Reference
+Set reference68 = part1.CreateReferenceFromObject(hybridShapeSplit45)
+
+Dim reference69 As Reference
+Set reference69 = part1.CreateReferenceFromObject(hybridShapePlaneOffset46)
+
+Dim hybridShapeSplit46 As HybridShapeSplit
+Set hybridShapeSplit46 = hybridShapeFactory1.AddNewHybridSplit(reference68, reference69, 1)
+
+hybridShapeFactory1.GSMVisibility reference68, 0
+
+hybridShapeSplit46.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit46
+
+part1.InWorkObject = hybridShapeSplit46
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument23 As DrawingDocument
+Set drawingDocument23 = documents1.Add("Drawing")
+
+drawingDocument23.Standard = catISO
+
+Dim drawingSheets23 As DrawingSheets
+Set drawingSheets23 = drawingDocument23.Sheets
+
+Dim drawingSheet23 As DrawingSheet
+Set drawingSheet23 = drawingSheets23.Item("页.1")
+
+drawingSheet23.PaperSize = catPaperA0
+
+drawingSheet23.[Scale] = 1#
+
+drawingSheet23.Orientation = catPaperLandscape
+
+Dim drawingViews23 As DrawingViews
+Set drawingViews23 = drawingSheet23.Views
+
+Dim drawingView23 As DrawingView
+Set drawingView23 = drawingViews23.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks23 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks23 = drawingView23.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior23 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior23 = drawingView23.GenerativeBehavior
+
+drawingViewGenerativeBehavior23.Document = product1
+
+drawingViewGenerativeBehavior23.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView23.X = 594.5
+
+drawingView23.Y = 420.5
+
+drawingView23.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior23 = drawingView23.GenerativeBehavior
+
+drawingViewGenerativeBehavior23.Update
+
+drawingView23.Activate
+
+Set drawingDocument23 = CATIA.ActiveDocument
+
+drawingDocument23.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt23.CATDrawing"
+
+Dim specsAndGeomWindow23 As SpecsAndGeomWindow
+Set specsAndGeomWindow23 = CATIA.ActiveWindow
+
+specsAndGeomWindow23.Close
+
+Set drawingDocument23 = CATIA.ActiveDocument
+
+drawingDocument23.Close
+
+Dim selection23 As Selection
+Set selection23 = partDocument1.Selection
+
+Dim visPropertySet23 As VisPropertySet
+Set visPropertySet23 = selection23.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit46.Parent
+
+Dim bSTR67 As String
+bSTR67 = hybridShapeSplit46.Name
+
+selection23.Add hybridShapeSplit46
+
+Set visPropertySet23 = visPropertySet23.Parent
+
+Dim bSTR68 As String
+bSTR68 = visPropertySet23.Name
+
+Dim bSTR69 As String
+bSTR69 = visPropertySet23.Name
+
+visPropertySet23.SetShow 1
+
+selection23.Clear
+
+Dim hybridShapePlaneOffset47 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset47 = hybridShapes1.Item("平面.24")
+
+Dim reference70 As Reference
+Set reference70 = part1.CreateReferenceFromObject(hybridShapePlaneOffset47)
+
+Dim hybridShapePlaneOffset48 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset48 = hybridShapeFactory1.AddNewPlaneOffset(reference70, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset48
+
+part1.InWorkObject = hybridShapePlaneOffset48
+
+part1.Update
+
+Dim hybridShapeSplit47 As HybridShapeSplit
+Set hybridShapeSplit47 = hybridShapes1.Item("分割.24")
+
+Dim reference71 As Reference
+Set reference71 = part1.CreateReferenceFromObject(hybridShapeSplit47)
+
+Dim reference72 As Reference
+Set reference72 = part1.CreateReferenceFromObject(hybridShapePlaneOffset48)
+
+Dim hybridShapeSplit48 As HybridShapeSplit
+Set hybridShapeSplit48 = hybridShapeFactory1.AddNewHybridSplit(reference71, reference72, 1)
+
+hybridShapeFactory1.GSMVisibility reference71, 0
+
+hybridShapeSplit48.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit48
+
+part1.InWorkObject = hybridShapeSplit48
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument24 As DrawingDocument
+Set drawingDocument24 = documents1.Add("Drawing")
+
+drawingDocument24.Standard = catISO
+
+Dim drawingSheets24 As DrawingSheets
+Set drawingSheets24 = drawingDocument24.Sheets
+
+Dim drawingSheet24 As DrawingSheet
+Set drawingSheet24 = drawingSheets24.Item("页.1")
+
+drawingSheet24.PaperSize = catPaperA0
+
+drawingSheet24.[Scale] = 1#
+
+drawingSheet24.Orientation = catPaperLandscape
+
+Dim drawingViews24 As DrawingViews
+Set drawingViews24 = drawingSheet24.Views
+
+Dim drawingView24 As DrawingView
+Set drawingView24 = drawingViews24.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks24 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks24 = drawingView24.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior24 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior24 = drawingView24.GenerativeBehavior
+
+drawingViewGenerativeBehavior24.Document = product1
+
+drawingViewGenerativeBehavior24.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView24.X = 594.5
+
+drawingView24.Y = 420.5
+
+drawingView24.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior24 = drawingView24.GenerativeBehavior
+
+drawingViewGenerativeBehavior24.Update
+
+drawingView24.Activate
+
+Set drawingDocument24 = CATIA.ActiveDocument
+
+drawingDocument24.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt24.CATDrawing"
+
+Dim specsAndGeomWindow24 As SpecsAndGeomWindow
+Set specsAndGeomWindow24 = CATIA.ActiveWindow
+
+specsAndGeomWindow24.Close
+
+Set drawingDocument24 = CATIA.ActiveDocument
+
+drawingDocument24.Close
+
+Dim selection24 As Selection
+Set selection24 = partDocument1.Selection
+
+Dim visPropertySet24 As VisPropertySet
+Set visPropertySet24 = selection24.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit48.Parent
+
+Dim bSTR70 As String
+bSTR70 = hybridShapeSplit48.Name
+
+selection24.Add hybridShapeSplit48
+
+Set visPropertySet24 = visPropertySet24.Parent
+
+Dim bSTR71 As String
+bSTR71 = visPropertySet24.Name
+
+Dim bSTR72 As String
+bSTR72 = visPropertySet24.Name
+
+visPropertySet24.SetShow 1
+
+selection24.Clear
+
+Dim hybridShapePlaneOffset49 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset49 = hybridShapes1.Item("平面.25")
+
+Dim reference73 As Reference
+Set reference73 = part1.CreateReferenceFromObject(hybridShapePlaneOffset49)
+
+Dim hybridShapePlaneOffset50 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset50 = hybridShapeFactory1.AddNewPlaneOffset(reference73, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset50
+
+part1.InWorkObject = hybridShapePlaneOffset50
+
+part1.Update
+
+Dim hybridShapeSplit49 As HybridShapeSplit
+Set hybridShapeSplit49 = hybridShapes1.Item("分割.25")
+
+Dim reference74 As Reference
+Set reference74 = part1.CreateReferenceFromObject(hybridShapeSplit49)
+
+Dim reference75 As Reference
+Set reference75 = part1.CreateReferenceFromObject(hybridShapePlaneOffset50)
+
+Dim hybridShapeSplit50 As HybridShapeSplit
+Set hybridShapeSplit50 = hybridShapeFactory1.AddNewHybridSplit(reference74, reference75, 1)
+
+hybridShapeFactory1.GSMVisibility reference74, 0
+
+hybridShapeSplit50.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit50
+
+part1.InWorkObject = hybridShapeSplit50
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument25 As DrawingDocument
+Set drawingDocument25 = documents1.Add("Drawing")
+
+drawingDocument25.Standard = catISO
+
+Dim drawingSheets25 As DrawingSheets
+Set drawingSheets25 = drawingDocument25.Sheets
+
+Dim drawingSheet25 As DrawingSheet
+Set drawingSheet25 = drawingSheets25.Item("页.1")
+
+drawingSheet25.PaperSize = catPaperA0
+
+drawingSheet25.[Scale] = 1#
+
+drawingSheet25.Orientation = catPaperLandscape
+
+Dim drawingViews25 As DrawingViews
+Set drawingViews25 = drawingSheet25.Views
+
+Dim drawingView25 As DrawingView
+Set drawingView25 = drawingViews25.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks25 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks25 = drawingView25.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior25 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior25 = drawingView25.GenerativeBehavior
+
+drawingViewGenerativeBehavior25.Document = product1
+
+drawingViewGenerativeBehavior25.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView25.X = 594.5
+
+drawingView25.Y = 420.5
+
+drawingView25.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior25 = drawingView25.GenerativeBehavior
+
+drawingViewGenerativeBehavior25.Update
+
+drawingView25.Activate
+
+Set drawingDocument25 = CATIA.ActiveDocument
+
+drawingDocument25.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt25.CATDrawing"
+
+Dim specsAndGeomWindow25 As SpecsAndGeomWindow
+Set specsAndGeomWindow25 = CATIA.ActiveWindow
+
+specsAndGeomWindow25.Close
+
+Set drawingDocument25 = CATIA.ActiveDocument
+
+drawingDocument25.Close
+
+Dim selection25 As Selection
+Set selection25 = partDocument1.Selection
+
+Dim visPropertySet25 As VisPropertySet
+Set visPropertySet25 = selection25.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit50.Parent
+
+Dim bSTR73 As String
+bSTR73 = hybridShapeSplit50.Name
+
+selection25.Add hybridShapeSplit50
+
+Set visPropertySet25 = visPropertySet25.Parent
+
+Dim bSTR74 As String
+bSTR74 = visPropertySet25.Name
+
+Dim bSTR75 As String
+bSTR75 = visPropertySet25.Name
+
+visPropertySet25.SetShow 1
+
+selection25.Clear
+
+Dim hybridShapePlaneOffset51 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset51 = hybridShapes1.Item("平面.26")
+
+Dim reference76 As Reference
+Set reference76 = part1.CreateReferenceFromObject(hybridShapePlaneOffset51)
+
+Dim hybridShapePlaneOffset52 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset52 = hybridShapeFactory1.AddNewPlaneOffset(reference76, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset52
+
+part1.InWorkObject = hybridShapePlaneOffset52
+
+part1.Update
+
+Dim hybridShapeSplit51 As HybridShapeSplit
+Set hybridShapeSplit51 = hybridShapes1.Item("分割.26")
+
+Dim reference77 As Reference
+Set reference77 = part1.CreateReferenceFromObject(hybridShapeSplit51)
+
+Dim reference78 As Reference
+Set reference78 = part1.CreateReferenceFromObject(hybridShapePlaneOffset52)
+
+Dim hybridShapeSplit52 As HybridShapeSplit
+Set hybridShapeSplit52 = hybridShapeFactory1.AddNewHybridSplit(reference77, reference78, 1)
+
+hybridShapeFactory1.GSMVisibility reference77, 0
+
+hybridShapeSplit52.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit52
+
+part1.InWorkObject = hybridShapeSplit52
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument26 As DrawingDocument
+Set drawingDocument26 = documents1.Add("Drawing")
+
+drawingDocument26.Standard = catISO
+
+Dim drawingSheets26 As DrawingSheets
+Set drawingSheets26 = drawingDocument26.Sheets
+
+Dim drawingSheet26 As DrawingSheet
+Set drawingSheet26 = drawingSheets26.Item("页.1")
+
+drawingSheet26.PaperSize = catPaperA0
+
+drawingSheet26.[Scale] = 1#
+
+drawingSheet26.Orientation = catPaperLandscape
+
+Dim drawingViews26 As DrawingViews
+Set drawingViews26 = drawingSheet26.Views
+
+Dim drawingView26 As DrawingView
+Set drawingView26 = drawingViews26.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks26 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks26 = drawingView26.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior26 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior26 = drawingView26.GenerativeBehavior
+
+drawingViewGenerativeBehavior26.Document = product1
+
+drawingViewGenerativeBehavior26.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView26.X = 594.5
+
+drawingView26.Y = 420.5
+
+drawingView26.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior26 = drawingView26.GenerativeBehavior
+
+drawingViewGenerativeBehavior26.Update
+
+drawingView26.Activate
+
+Set drawingDocument26 = CATIA.ActiveDocument
+
+drawingDocument26.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt26.CATDrawing"
+
+Dim specsAndGeomWindow26 As SpecsAndGeomWindow
+Set specsAndGeomWindow26 = CATIA.ActiveWindow
+
+specsAndGeomWindow26.Close
+
+Set drawingDocument26 = CATIA.ActiveDocument
+
+drawingDocument26.Close
+
+Dim selection26 As Selection
+Set selection26 = partDocument1.Selection
+
+Dim visPropertySet26 As VisPropertySet
+Set visPropertySet26 = selection26.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit52.Parent
+
+Dim bSTR76 As String
+bSTR76 = hybridShapeSplit52.Name
+
+selection26.Add hybridShapeSplit52
+
+Set visPropertySet26 = visPropertySet26.Parent
+
+Dim bSTR77 As String
+bSTR77 = visPropertySet26.Name
+
+Dim bSTR78 As String
+bSTR78 = visPropertySet26.Name
+
+visPropertySet26.SetShow 1
+
+selection26.Clear
+
+Dim hybridShapePlaneOffset53 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset53 = hybridShapes1.Item("平面.27")
+
+Dim reference79 As Reference
+Set reference79 = part1.CreateReferenceFromObject(hybridShapePlaneOffset53)
+
+Dim hybridShapePlaneOffset54 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset54 = hybridShapeFactory1.AddNewPlaneOffset(reference79, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset54
+
+part1.InWorkObject = hybridShapePlaneOffset54
+
+part1.Update
+
+Dim hybridShapeSplit53 As HybridShapeSplit
+Set hybridShapeSplit53 = hybridShapes1.Item("分割.27")
+
+Dim reference80 As Reference
+Set reference80 = part1.CreateReferenceFromObject(hybridShapeSplit53)
+
+Dim reference81 As Reference
+Set reference81 = part1.CreateReferenceFromObject(hybridShapePlaneOffset54)
+
+Dim hybridShapeSplit54 As HybridShapeSplit
+Set hybridShapeSplit54 = hybridShapeFactory1.AddNewHybridSplit(reference80, reference81, 1)
+
+hybridShapeFactory1.GSMVisibility reference80, 0
+
+hybridShapeSplit54.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit54
+
+part1.InWorkObject = hybridShapeSplit54
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument27 As DrawingDocument
+Set drawingDocument27 = documents1.Add("Drawing")
+
+drawingDocument27.Standard = catISO
+
+Dim drawingSheets27 As DrawingSheets
+Set drawingSheets27 = drawingDocument27.Sheets
+
+Dim drawingSheet27 As DrawingSheet
+Set drawingSheet27 = drawingSheets27.Item("页.1")
+
+drawingSheet27.PaperSize = catPaperA0
+
+drawingSheet27.[Scale] = 1#
+
+drawingSheet27.Orientation = catPaperLandscape
+
+Dim drawingViews27 As DrawingViews
+Set drawingViews27 = drawingSheet27.Views
+
+Dim drawingView27 As DrawingView
+Set drawingView27 = drawingViews27.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks27 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks27 = drawingView27.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior27 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior27 = drawingView27.GenerativeBehavior
+
+drawingViewGenerativeBehavior27.Document = product1
+
+drawingViewGenerativeBehavior27.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView27.X = 594.5
+
+drawingView27.Y = 420.5
+
+drawingView27.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior27 = drawingView27.GenerativeBehavior
+
+drawingViewGenerativeBehavior27.Update
+
+drawingView27.Activate
+
+Set drawingDocument27 = CATIA.ActiveDocument
+
+drawingDocument27.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt27.CATDrawing"
+
+Dim specsAndGeomWindow27 As SpecsAndGeomWindow
+Set specsAndGeomWindow27 = CATIA.ActiveWindow
+
+specsAndGeomWindow27.Close
+
+Set drawingDocument27 = CATIA.ActiveDocument
+
+drawingDocument27.Close
+
+Dim selection27 As Selection
+Set selection27 = partDocument1.Selection
+
+Dim visPropertySet27 As VisPropertySet
+Set visPropertySet27 = selection27.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit54.Parent
+
+Dim bSTR79 As String
+bSTR79 = hybridShapeSplit54.Name
+
+selection27.Add hybridShapeSplit54
+
+Set visPropertySet27 = visPropertySet27.Parent
+
+Dim bSTR80 As String
+bSTR80 = visPropertySet27.Name
+
+Dim bSTR81 As String
+bSTR81 = visPropertySet27.Name
+
+visPropertySet27.SetShow 1
+
+selection27.Clear
+
+Dim hybridShapePlaneOffset55 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset55 = hybridShapes1.Item("平面.28")
+
+Dim reference82 As Reference
+Set reference82 = part1.CreateReferenceFromObject(hybridShapePlaneOffset55)
+
+Dim hybridShapePlaneOffset56 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset56 = hybridShapeFactory1.AddNewPlaneOffset(reference82, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset56
+
+part1.InWorkObject = hybridShapePlaneOffset56
+
+part1.Update
+
+Dim hybridShapeSplit55 As HybridShapeSplit
+Set hybridShapeSplit55 = hybridShapes1.Item("分割.28")
+
+Dim reference83 As Reference
+Set reference83 = part1.CreateReferenceFromObject(hybridShapeSplit55)
+
+Dim reference84 As Reference
+Set reference84 = part1.CreateReferenceFromObject(hybridShapePlaneOffset56)
+
+Dim hybridShapeSplit56 As HybridShapeSplit
+Set hybridShapeSplit56 = hybridShapeFactory1.AddNewHybridSplit(reference83, reference84, 1)
+
+hybridShapeFactory1.GSMVisibility reference83, 0
+
+hybridShapeSplit56.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit56
+
+part1.InWorkObject = hybridShapeSplit56
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument28 As DrawingDocument
+Set drawingDocument28 = documents1.Add("Drawing")
+
+drawingDocument28.Standard = catISO
+
+Dim drawingSheets28 As DrawingSheets
+Set drawingSheets28 = drawingDocument28.Sheets
+
+Dim drawingSheet28 As DrawingSheet
+Set drawingSheet28 = drawingSheets28.Item("页.1")
+
+drawingSheet28.PaperSize = catPaperA0
+
+drawingSheet28.[Scale] = 1#
+
+drawingSheet28.Orientation = catPaperLandscape
+
+Dim drawingViews28 As DrawingViews
+Set drawingViews28 = drawingSheet28.Views
+
+Dim drawingView28 As DrawingView
+Set drawingView28 = drawingViews28.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks28 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks28 = drawingView28.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior28 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior28 = drawingView28.GenerativeBehavior
+
+drawingViewGenerativeBehavior28.Document = product1
+
+drawingViewGenerativeBehavior28.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView28.X = 594.5
+
+drawingView28.Y = 420.5
+
+drawingView28.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior28 = drawingView28.GenerativeBehavior
+
+drawingViewGenerativeBehavior28.Update
+
+drawingView28.Activate
+
+Set drawingDocument28 = CATIA.ActiveDocument
+
+drawingDocument28.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt28.CATDrawing"
+
+Dim specsAndGeomWindow28 As SpecsAndGeomWindow
+Set specsAndGeomWindow28 = CATIA.ActiveWindow
+
+specsAndGeomWindow28.Close
+
+Set drawingDocument28 = CATIA.ActiveDocument
+
+drawingDocument28.Close
+
+Dim selection28 As Selection
+Set selection28 = partDocument1.Selection
+
+Dim visPropertySet28 As VisPropertySet
+Set visPropertySet28 = selection28.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit56.Parent
+
+Dim bSTR82 As String
+bSTR82 = hybridShapeSplit56.Name
+
+selection28.Add hybridShapeSplit56
+
+Set visPropertySet28 = visPropertySet28.Parent
+
+Dim bSTR83 As String
+bSTR83 = visPropertySet28.Name
+
+Dim bSTR84 As String
+bSTR84 = visPropertySet28.Name
+
+visPropertySet28.SetShow 1
+
+selection28.Clear
+
+Dim hybridShapePlaneOffset57 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset57 = hybridShapes1.Item("平面.29")
+
+Dim reference85 As Reference
+Set reference85 = part1.CreateReferenceFromObject(hybridShapePlaneOffset57)
+
+Dim hybridShapePlaneOffset58 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset58 = hybridShapeFactory1.AddNewPlaneOffset(reference85, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset58
+
+part1.InWorkObject = hybridShapePlaneOffset58
+
+part1.Update
+
+Dim hybridShapeSplit57 As HybridShapeSplit
+Set hybridShapeSplit57 = hybridShapes1.Item("分割.29")
+
+Dim reference86 As Reference
+Set reference86 = part1.CreateReferenceFromObject(hybridShapeSplit57)
+
+Dim reference87 As Reference
+Set reference87 = part1.CreateReferenceFromObject(hybridShapePlaneOffset58)
+
+Dim hybridShapeSplit58 As HybridShapeSplit
+Set hybridShapeSplit58 = hybridShapeFactory1.AddNewHybridSplit(reference86, reference87, 1)
+
+hybridShapeFactory1.GSMVisibility reference86, 0
+
+hybridShapeSplit58.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit58
+
+part1.InWorkObject = hybridShapeSplit58
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument29 As DrawingDocument
+Set drawingDocument29 = documents1.Add("Drawing")
+
+drawingDocument29.Standard = catISO
+
+Dim drawingSheets29 As DrawingSheets
+Set drawingSheets29 = drawingDocument29.Sheets
+
+Dim drawingSheet29 As DrawingSheet
+Set drawingSheet29 = drawingSheets29.Item("页.1")
+
+drawingSheet29.PaperSize = catPaperA0
+
+drawingSheet29.[Scale] = 1#
+
+drawingSheet29.Orientation = catPaperLandscape
+
+Dim drawingViews29 As DrawingViews
+Set drawingViews29 = drawingSheet29.Views
+
+Dim drawingView29 As DrawingView
+Set drawingView29 = drawingViews29.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks29 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks29 = drawingView29.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior29 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior29 = drawingView29.GenerativeBehavior
+
+drawingViewGenerativeBehavior29.Document = product1
+
+drawingViewGenerativeBehavior29.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView29.X = 594.5
+
+drawingView29.Y = 420.5
+
+drawingView29.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior29 = drawingView29.GenerativeBehavior
+
+drawingViewGenerativeBehavior29.Update
+
+drawingView29.Activate
+
+Set drawingDocument29 = CATIA.ActiveDocument
+
+drawingDocument29.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt29.CATDrawing"
+
+Dim specsAndGeomWindow29 As SpecsAndGeomWindow
+Set specsAndGeomWindow29 = CATIA.ActiveWindow
+
+specsAndGeomWindow29.Close
+
+Set drawingDocument29 = CATIA.ActiveDocument
+
+drawingDocument29.Close
+
+Dim selection29 As Selection
+Set selection29 = partDocument1.Selection
+
+Dim visPropertySet29 As VisPropertySet
+Set visPropertySet29 = selection29.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit58.Parent
+
+Dim bSTR85 As String
+bSTR85 = hybridShapeSplit58.Name
+
+selection29.Add hybridShapeSplit58
+
+Set visPropertySet29 = visPropertySet29.Parent
+
+Dim bSTR86 As String
+bSTR86 = visPropertySet29.Name
+
+Dim bSTR87 As String
+bSTR87 = visPropertySet29.Name
+
+visPropertySet29.SetShow 1
+
+selection29.Clear
+
+Dim hybridShapePlaneOffset59 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset59 = hybridShapes1.Item("平面.30")
+
+Dim reference88 As Reference
+Set reference88 = part1.CreateReferenceFromObject(hybridShapePlaneOffset59)
+
+Dim hybridShapePlaneOffset60 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset60 = hybridShapeFactory1.AddNewPlaneOffset(reference88, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset60
+
+part1.InWorkObject = hybridShapePlaneOffset60
+
+part1.Update
+
+Dim hybridShapeSplit59 As HybridShapeSplit
+Set hybridShapeSplit59 = hybridShapes1.Item("分割.30")
+
+Dim reference89 As Reference
+Set reference89 = part1.CreateReferenceFromObject(hybridShapeSplit59)
+
+Dim reference90 As Reference
+Set reference90 = part1.CreateReferenceFromObject(hybridShapePlaneOffset60)
+
+Dim hybridShapeSplit60 As HybridShapeSplit
+Set hybridShapeSplit60 = hybridShapeFactory1.AddNewHybridSplit(reference89, reference90, 1)
+
+hybridShapeFactory1.GSMVisibility reference89, 0
+
+hybridShapeSplit60.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit60
+
+part1.InWorkObject = hybridShapeSplit60
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument30 As DrawingDocument
+Set drawingDocument30 = documents1.Add("Drawing")
+
+drawingDocument30.Standard = catISO
+
+Dim drawingSheets30 As DrawingSheets
+Set drawingSheets30 = drawingDocument30.Sheets
+
+Dim drawingSheet30 As DrawingSheet
+Set drawingSheet30 = drawingSheets30.Item("页.1")
+
+drawingSheet30.PaperSize = catPaperA0
+
+drawingSheet30.[Scale] = 1#
+
+drawingSheet30.Orientation = catPaperLandscape
+
+Dim drawingViews30 As DrawingViews
+Set drawingViews30 = drawingSheet30.Views
+
+Dim drawingView30 As DrawingView
+Set drawingView30 = drawingViews30.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks30 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks30 = drawingView30.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior30 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior30 = drawingView30.GenerativeBehavior
+
+drawingViewGenerativeBehavior30.Document = product1
+
+drawingViewGenerativeBehavior30.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView30.X = 594.5
+
+drawingView30.Y = 420.5
+
+drawingView30.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior30 = drawingView30.GenerativeBehavior
+
+drawingViewGenerativeBehavior30.Update
+
+drawingView30.Activate
+
+Set drawingDocument30 = CATIA.ActiveDocument
+
+drawingDocument30.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt30.CATDrawing"
+
+Dim specsAndGeomWindow30 As SpecsAndGeomWindow
+Set specsAndGeomWindow30 = CATIA.ActiveWindow
+
+specsAndGeomWindow30.Close
+
+Set drawingDocument30 = CATIA.ActiveDocument
+
+drawingDocument30.Close
+
+Dim selection30 As Selection
+Set selection30 = partDocument1.Selection
+
+Dim visPropertySet30 As VisPropertySet
+Set visPropertySet30 = selection30.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit60.Parent
+
+Dim bSTR88 As String
+bSTR88 = hybridShapeSplit60.Name
+
+selection30.Add hybridShapeSplit60
+
+Set visPropertySet30 = visPropertySet30.Parent
+
+Dim bSTR89 As String
+bSTR89 = visPropertySet30.Name
+
+Dim bSTR90 As String
+bSTR90 = visPropertySet30.Name
+
+visPropertySet30.SetShow 1
+
+selection30.Clear
+
+Dim hybridShapePlaneOffset61 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset61 = hybridShapes1.Item("平面.31")
+
+Dim reference91 As Reference
+Set reference91 = part1.CreateReferenceFromObject(hybridShapePlaneOffset61)
+
+Dim hybridShapePlaneOffset62 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset62 = hybridShapeFactory1.AddNewPlaneOffset(reference91, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset62
+
+part1.InWorkObject = hybridShapePlaneOffset62
+
+part1.Update
+
+Dim hybridShapeSplit61 As HybridShapeSplit
+Set hybridShapeSplit61 = hybridShapes1.Item("分割.31")
+
+Dim reference92 As Reference
+Set reference92 = part1.CreateReferenceFromObject(hybridShapeSplit61)
+
+Dim reference93 As Reference
+Set reference93 = part1.CreateReferenceFromObject(hybridShapePlaneOffset62)
+
+Dim hybridShapeSplit62 As HybridShapeSplit
+Set hybridShapeSplit62 = hybridShapeFactory1.AddNewHybridSplit(reference92, reference93, 1)
+
+hybridShapeFactory1.GSMVisibility reference92, 0
+
+hybridShapeSplit62.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit62
+
+part1.InWorkObject = hybridShapeSplit62
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument31 As DrawingDocument
+Set drawingDocument31 = documents1.Add("Drawing")
+
+drawingDocument31.Standard = catISO
+
+Dim drawingSheets31 As DrawingSheets
+Set drawingSheets31 = drawingDocument31.Sheets
+
+Dim drawingSheet31 As DrawingSheet
+Set drawingSheet31 = drawingSheets31.Item("页.1")
+
+drawingSheet31.PaperSize = catPaperA0
+
+drawingSheet31.[Scale] = 1#
+
+drawingSheet31.Orientation = catPaperLandscape
+
+Dim drawingViews31 As DrawingViews
+Set drawingViews31 = drawingSheet31.Views
+
+Dim drawingView31 As DrawingView
+Set drawingView31 = drawingViews31.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks31 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks31 = drawingView31.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior31 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior31 = drawingView31.GenerativeBehavior
+
+drawingViewGenerativeBehavior31.Document = product1
+
+drawingViewGenerativeBehavior31.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView31.X = 594.5
+
+drawingView31.Y = 420.5
+
+drawingView31.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior31 = drawingView31.GenerativeBehavior
+
+drawingViewGenerativeBehavior31.Update
+
+drawingView31.Activate
+
+Set drawingDocument31 = CATIA.ActiveDocument
+
+drawingDocument31.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt31.CATDrawing"
+
+Dim specsAndGeomWindow31 As SpecsAndGeomWindow
+Set specsAndGeomWindow31 = CATIA.ActiveWindow
+
+specsAndGeomWindow31.Close
+
+Set drawingDocument31 = CATIA.ActiveDocument
+
+drawingDocument31.Close
+
+Dim selection31 As Selection
+Set selection31 = partDocument1.Selection
+
+Dim visPropertySet31 As VisPropertySet
+Set visPropertySet31 = selection31.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit62.Parent
+
+Dim bSTR91 As String
+bSTR91 = hybridShapeSplit62.Name
+
+selection31.Add hybridShapeSplit62
+
+Set visPropertySet31 = visPropertySet31.Parent
+
+Dim bSTR92 As String
+bSTR92 = visPropertySet31.Name
+
+Dim bSTR93 As String
+bSTR93 = visPropertySet31.Name
+
+visPropertySet31.SetShow 1
+
+selection31.Clear
+
+Dim hybridShapePlaneOffset63 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset63 = hybridShapes1.Item("平面.32")
+
+Dim reference94 As Reference
+Set reference94 = part1.CreateReferenceFromObject(hybridShapePlaneOffset63)
+
+Dim hybridShapePlaneOffset64 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset64 = hybridShapeFactory1.AddNewPlaneOffset(reference94, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset64
+
+part1.InWorkObject = hybridShapePlaneOffset64
+
+part1.Update
+
+Dim hybridShapeSplit63 As HybridShapeSplit
+Set hybridShapeSplit63 = hybridShapes1.Item("分割.32")
+
+Dim reference95 As Reference
+Set reference95 = part1.CreateReferenceFromObject(hybridShapeSplit63)
+
+Dim reference96 As Reference
+Set reference96 = part1.CreateReferenceFromObject(hybridShapePlaneOffset64)
+
+Dim hybridShapeSplit64 As HybridShapeSplit
+Set hybridShapeSplit64 = hybridShapeFactory1.AddNewHybridSplit(reference95, reference96, 1)
+
+hybridShapeFactory1.GSMVisibility reference95, 0
+
+hybridShapeSplit64.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit64
+
+part1.InWorkObject = hybridShapeSplit64
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument32 As DrawingDocument
+Set drawingDocument32 = documents1.Add("Drawing")
+
+drawingDocument32.Standard = catISO
+
+Dim drawingSheets32 As DrawingSheets
+Set drawingSheets32 = drawingDocument32.Sheets
+
+Dim drawingSheet32 As DrawingSheet
+Set drawingSheet32 = drawingSheets32.Item("页.1")
+
+drawingSheet32.PaperSize = catPaperA0
+
+drawingSheet32.[Scale] = 1#
+
+drawingSheet32.Orientation = catPaperLandscape
+
+Dim drawingViews32 As DrawingViews
+Set drawingViews32 = drawingSheet32.Views
+
+Dim drawingView32 As DrawingView
+Set drawingView32 = drawingViews32.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks32 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks32 = drawingView32.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior32 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior32 = drawingView32.GenerativeBehavior
+
+drawingViewGenerativeBehavior32.Document = product1
+
+drawingViewGenerativeBehavior32.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView32.X = 594.5
+
+drawingView32.Y = 420.5
+
+drawingView32.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior32 = drawingView32.GenerativeBehavior
+
+drawingViewGenerativeBehavior32.Update
+
+drawingView32.Activate
+
+Set drawingDocument32 = CATIA.ActiveDocument
+
+drawingDocument32.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt32.CATDrawing"
+
+Dim specsAndGeomWindow32 As SpecsAndGeomWindow
+Set specsAndGeomWindow32 = CATIA.ActiveWindow
+
+specsAndGeomWindow32.Close
+
+Set drawingDocument32 = CATIA.ActiveDocument
+
+drawingDocument32.Close
+
+Dim selection32 As Selection
+Set selection32 = partDocument1.Selection
+
+Dim visPropertySet32 As VisPropertySet
+Set visPropertySet32 = selection32.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit64.Parent
+
+Dim bSTR94 As String
+bSTR94 = hybridShapeSplit64.Name
+
+selection32.Add hybridShapeSplit64
+
+Set visPropertySet32 = visPropertySet32.Parent
+
+Dim bSTR95 As String
+bSTR95 = visPropertySet32.Name
+
+Dim bSTR96 As String
+bSTR96 = visPropertySet32.Name
+
+visPropertySet32.SetShow 1
+
+selection32.Clear
+
+Dim hybridShapePlaneOffset65 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset65 = hybridShapes1.Item("平面.33")
+
+Dim reference97 As Reference
+Set reference97 = part1.CreateReferenceFromObject(hybridShapePlaneOffset65)
+
+Dim hybridShapePlaneOffset66 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset66 = hybridShapeFactory1.AddNewPlaneOffset(reference97, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset66
+
+part1.InWorkObject = hybridShapePlaneOffset66
+
+part1.Update
+
+Dim hybridShapeSplit65 As HybridShapeSplit
+Set hybridShapeSplit65 = hybridShapes1.Item("分割.33")
+
+Dim reference98 As Reference
+Set reference98 = part1.CreateReferenceFromObject(hybridShapeSplit65)
+
+Dim reference99 As Reference
+Set reference99 = part1.CreateReferenceFromObject(hybridShapePlaneOffset66)
+
+Dim hybridShapeSplit66 As HybridShapeSplit
+Set hybridShapeSplit66 = hybridShapeFactory1.AddNewHybridSplit(reference98, reference99, 1)
+
+hybridShapeFactory1.GSMVisibility reference98, 0
+
+hybridShapeSplit66.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit66
+
+part1.InWorkObject = hybridShapeSplit66
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument33 As DrawingDocument
+Set drawingDocument33 = documents1.Add("Drawing")
+
+drawingDocument33.Standard = catISO
+
+Dim drawingSheets33 As DrawingSheets
+Set drawingSheets33 = drawingDocument33.Sheets
+
+Dim drawingSheet33 As DrawingSheet
+Set drawingSheet33 = drawingSheets33.Item("页.1")
+
+drawingSheet33.PaperSize = catPaperA0
+
+drawingSheet33.[Scale] = 1#
+
+drawingSheet33.Orientation = catPaperLandscape
+
+Dim drawingViews33 As DrawingViews
+Set drawingViews33 = drawingSheet33.Views
+
+Dim drawingView33 As DrawingView
+Set drawingView33 = drawingViews33.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks33 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks33 = drawingView33.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior33 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior33 = drawingView33.GenerativeBehavior
+
+drawingViewGenerativeBehavior33.Document = product1
+
+drawingViewGenerativeBehavior33.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView33.X = 594.5
+
+drawingView33.Y = 420.5
+
+drawingView33.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior33 = drawingView33.GenerativeBehavior
+
+drawingViewGenerativeBehavior33.Update
+
+drawingView33.Activate
+
+Set drawingDocument33 = CATIA.ActiveDocument
+
+drawingDocument33.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt33.CATDrawing"
+
+Dim specsAndGeomWindow33 As SpecsAndGeomWindow
+Set specsAndGeomWindow33 = CATIA.ActiveWindow
+
+specsAndGeomWindow33.Close
+
+Set drawingDocument33 = CATIA.ActiveDocument
+
+drawingDocument33.Close
+
+Dim selection33 As Selection
+Set selection33 = partDocument1.Selection
+
+Dim visPropertySet33 As VisPropertySet
+Set visPropertySet33 = selection33.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit66.Parent
+
+Dim bSTR97 As String
+bSTR97 = hybridShapeSplit66.Name
+
+selection33.Add hybridShapeSplit66
+
+Set visPropertySet33 = visPropertySet33.Parent
+
+Dim bSTR98 As String
+bSTR98 = visPropertySet33.Name
+
+Dim bSTR99 As String
+bSTR99 = visPropertySet33.Name
+
+visPropertySet33.SetShow 1
+
+selection33.Clear
+
+Dim hybridShapePlaneOffset67 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset67 = hybridShapes1.Item("平面.34")
+
+Dim reference100 As Reference
+Set reference100 = part1.CreateReferenceFromObject(hybridShapePlaneOffset67)
+
+Dim hybridShapePlaneOffset68 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset68 = hybridShapeFactory1.AddNewPlaneOffset(reference100, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset68
+
+part1.InWorkObject = hybridShapePlaneOffset68
+
+part1.Update
+
+Dim hybridShapeSplit67 As HybridShapeSplit
+Set hybridShapeSplit67 = hybridShapes1.Item("分割.34")
+
+Dim reference101 As Reference
+Set reference101 = part1.CreateReferenceFromObject(hybridShapeSplit67)
+
+Dim reference102 As Reference
+Set reference102 = part1.CreateReferenceFromObject(hybridShapePlaneOffset68)
+
+Dim hybridShapeSplit68 As HybridShapeSplit
+Set hybridShapeSplit68 = hybridShapeFactory1.AddNewHybridSplit(reference101, reference102, 1)
+
+hybridShapeFactory1.GSMVisibility reference101, 0
+
+hybridShapeSplit68.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit68
+
+part1.InWorkObject = hybridShapeSplit68
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument34 As DrawingDocument
+Set drawingDocument34 = documents1.Add("Drawing")
+
+drawingDocument34.Standard = catISO
+
+Dim drawingSheets34 As DrawingSheets
+Set drawingSheets34 = drawingDocument34.Sheets
+
+Dim drawingSheet34 As DrawingSheet
+Set drawingSheet34 = drawingSheets34.Item("页.1")
+
+drawingSheet34.PaperSize = catPaperA0
+
+drawingSheet34.[Scale] = 1#
+
+drawingSheet34.Orientation = catPaperLandscape
+
+Dim drawingViews34 As DrawingViews
+Set drawingViews34 = drawingSheet34.Views
+
+Dim drawingView34 As DrawingView
+Set drawingView34 = drawingViews34.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks34 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks34 = drawingView34.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior34 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior34 = drawingView34.GenerativeBehavior
+
+drawingViewGenerativeBehavior34.Document = product1
+
+drawingViewGenerativeBehavior34.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView34.X = 594.5
+
+drawingView34.Y = 420.5
+
+drawingView34.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior34 = drawingView34.GenerativeBehavior
+
+drawingViewGenerativeBehavior34.Update
+
+drawingView34.Activate
+
+Set drawingDocument34 = CATIA.ActiveDocument
+
+drawingDocument34.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt34.CATDrawing"
+
+Dim specsAndGeomWindow34 As SpecsAndGeomWindow
+Set specsAndGeomWindow34 = CATIA.ActiveWindow
+
+specsAndGeomWindow34.Close
+
+Set drawingDocument34 = CATIA.ActiveDocument
+
+drawingDocument34.Close
+
+Dim selection34 As Selection
+Set selection34 = partDocument1.Selection
+
+Dim visPropertySet34 As VisPropertySet
+Set visPropertySet34 = selection34.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit68.Parent
+
+Dim bSTR100 As String
+bSTR100 = hybridShapeSplit68.Name
+
+selection34.Add hybridShapeSplit68
+
+Set visPropertySet34 = visPropertySet34.Parent
+
+Dim bSTR101 As String
+bSTR101 = visPropertySet34.Name
+
+Dim bSTR102 As String
+bSTR102 = visPropertySet34.Name
+
+visPropertySet34.SetShow 1
+
+selection34.Clear
+
+Dim hybridShapePlaneOffset69 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset69 = hybridShapes1.Item("平面.35")
+
+Dim reference103 As Reference
+Set reference103 = part1.CreateReferenceFromObject(hybridShapePlaneOffset69)
+
+Dim hybridShapePlaneOffset70 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset70 = hybridShapeFactory1.AddNewPlaneOffset(reference103, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset70
+
+part1.InWorkObject = hybridShapePlaneOffset70
+
+part1.Update
+
+Dim hybridShapeSplit69 As HybridShapeSplit
+Set hybridShapeSplit69 = hybridShapes1.Item("分割.35")
+
+Dim reference104 As Reference
+Set reference104 = part1.CreateReferenceFromObject(hybridShapeSplit69)
+
+Dim reference105 As Reference
+Set reference105 = part1.CreateReferenceFromObject(hybridShapePlaneOffset70)
+
+Dim hybridShapeSplit70 As HybridShapeSplit
+Set hybridShapeSplit70 = hybridShapeFactory1.AddNewHybridSplit(reference104, reference105, 1)
+
+hybridShapeFactory1.GSMVisibility reference104, 0
+
+hybridShapeSplit70.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit70
+
+part1.InWorkObject = hybridShapeSplit70
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument35 As DrawingDocument
+Set drawingDocument35 = documents1.Add("Drawing")
+
+drawingDocument35.Standard = catISO
+
+Dim drawingSheets35 As DrawingSheets
+Set drawingSheets35 = drawingDocument35.Sheets
+
+Dim drawingSheet35 As DrawingSheet
+Set drawingSheet35 = drawingSheets35.Item("页.1")
+
+drawingSheet35.PaperSize = catPaperA0
+
+drawingSheet35.[Scale] = 1#
+
+drawingSheet35.Orientation = catPaperLandscape
+
+Dim drawingViews35 As DrawingViews
+Set drawingViews35 = drawingSheet35.Views
+
+Dim drawingView35 As DrawingView
+Set drawingView35 = drawingViews35.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks35 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks35 = drawingView35.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior35 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior35 = drawingView35.GenerativeBehavior
+
+drawingViewGenerativeBehavior35.Document = product1
+
+drawingViewGenerativeBehavior35.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView35.X = 594.5
+
+drawingView35.Y = 420.5
+
+drawingView35.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior35 = drawingView35.GenerativeBehavior
+
+drawingViewGenerativeBehavior35.Update
+
+drawingView35.Activate
+
+Set drawingDocument35 = CATIA.ActiveDocument
+
+drawingDocument35.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt35.CATDrawing"
+
+Dim specsAndGeomWindow35 As SpecsAndGeomWindow
+Set specsAndGeomWindow35 = CATIA.ActiveWindow
+
+specsAndGeomWindow35.Close
+
+Set drawingDocument35 = CATIA.ActiveDocument
+
+drawingDocument35.Close
+
+Dim selection35 As Selection
+Set selection35 = partDocument1.Selection
+
+Dim visPropertySet35 As VisPropertySet
+Set visPropertySet35 = selection35.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit70.Parent
+
+Dim bSTR103 As String
+bSTR103 = hybridShapeSplit70.Name
+
+selection35.Add hybridShapeSplit70
+
+Set visPropertySet35 = visPropertySet35.Parent
+
+Dim bSTR104 As String
+bSTR104 = visPropertySet35.Name
+
+Dim bSTR105 As String
+bSTR105 = visPropertySet35.Name
+
+visPropertySet35.SetShow 1
+
+selection35.Clear
+
+Dim hybridShapePlaneOffset71 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset71 = hybridShapes1.Item("平面.36")
+
+Dim reference106 As Reference
+Set reference106 = part1.CreateReferenceFromObject(hybridShapePlaneOffset71)
+
+Dim hybridShapePlaneOffset72 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset72 = hybridShapeFactory1.AddNewPlaneOffset(reference106, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset72
+
+part1.InWorkObject = hybridShapePlaneOffset72
+
+part1.Update
+
+Dim hybridShapeSplit71 As HybridShapeSplit
+Set hybridShapeSplit71 = hybridShapes1.Item("分割.36")
+
+Dim reference107 As Reference
+Set reference107 = part1.CreateReferenceFromObject(hybridShapeSplit71)
+
+Dim reference108 As Reference
+Set reference108 = part1.CreateReferenceFromObject(hybridShapePlaneOffset72)
+
+Dim hybridShapeSplit72 As HybridShapeSplit
+Set hybridShapeSplit72 = hybridShapeFactory1.AddNewHybridSplit(reference107, reference108, 1)
+
+hybridShapeFactory1.GSMVisibility reference107, 0
+
+hybridShapeSplit72.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit72
+
+part1.InWorkObject = hybridShapeSplit72
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument36 As DrawingDocument
+Set drawingDocument36 = documents1.Add("Drawing")
+
+drawingDocument36.Standard = catISO
+
+Dim drawingSheets36 As DrawingSheets
+Set drawingSheets36 = drawingDocument36.Sheets
+
+Dim drawingSheet36 As DrawingSheet
+Set drawingSheet36 = drawingSheets36.Item("页.1")
+
+drawingSheet36.PaperSize = catPaperA0
+
+drawingSheet36.[Scale] = 1#
+
+drawingSheet36.Orientation = catPaperLandscape
+
+Dim drawingViews36 As DrawingViews
+Set drawingViews36 = drawingSheet36.Views
+
+Dim drawingView36 As DrawingView
+Set drawingView36 = drawingViews36.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks36 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks36 = drawingView36.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior36 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior36 = drawingView36.GenerativeBehavior
+
+drawingViewGenerativeBehavior36.Document = product1
+
+drawingViewGenerativeBehavior36.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView36.X = 594.5
+
+drawingView36.Y = 420.5
+
+drawingView36.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior36 = drawingView36.GenerativeBehavior
+
+drawingViewGenerativeBehavior36.Update
+
+drawingView36.Activate
+
+Set drawingDocument36 = CATIA.ActiveDocument
+
+drawingDocument36.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt36.CATDrawing"
+
+Dim specsAndGeomWindow36 As SpecsAndGeomWindow
+Set specsAndGeomWindow36 = CATIA.ActiveWindow
+
+specsAndGeomWindow36.Close
+
+Set drawingDocument36 = CATIA.ActiveDocument
+
+drawingDocument36.Close
+
+Dim selection36 As Selection
+Set selection36 = partDocument1.Selection
+
+Dim visPropertySet36 As VisPropertySet
+Set visPropertySet36 = selection36.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit72.Parent
+
+Dim bSTR106 As String
+bSTR106 = hybridShapeSplit72.Name
+
+selection36.Add hybridShapeSplit72
+
+Set visPropertySet36 = visPropertySet36.Parent
+
+Dim bSTR107 As String
+bSTR107 = visPropertySet36.Name
+
+Dim bSTR108 As String
+bSTR108 = visPropertySet36.Name
+
+visPropertySet36.SetShow 1
+
+selection36.Clear
+
+Dim hybridShapePlaneOffset73 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset73 = hybridShapes1.Item("平面.37")
+
+Dim reference109 As Reference
+Set reference109 = part1.CreateReferenceFromObject(hybridShapePlaneOffset73)
+
+Dim hybridShapePlaneOffset74 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset74 = hybridShapeFactory1.AddNewPlaneOffset(reference109, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset74
+
+part1.InWorkObject = hybridShapePlaneOffset74
+
+part1.Update
+
+Dim hybridShapeSplit73 As HybridShapeSplit
+Set hybridShapeSplit73 = hybridShapes1.Item("分割.37")
+
+Dim reference110 As Reference
+Set reference110 = part1.CreateReferenceFromObject(hybridShapeSplit73)
+
+Dim reference111 As Reference
+Set reference111 = part1.CreateReferenceFromObject(hybridShapePlaneOffset74)
+
+Dim hybridShapeSplit74 As HybridShapeSplit
+Set hybridShapeSplit74 = hybridShapeFactory1.AddNewHybridSplit(reference110, reference111, 1)
+
+hybridShapeFactory1.GSMVisibility reference110, 0
+
+hybridShapeSplit74.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit74
+
+part1.InWorkObject = hybridShapeSplit74
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument37 As DrawingDocument
+Set drawingDocument37 = documents1.Add("Drawing")
+
+drawingDocument37.Standard = catISO
+
+Dim drawingSheets37 As DrawingSheets
+Set drawingSheets37 = drawingDocument37.Sheets
+
+Dim drawingSheet37 As DrawingSheet
+Set drawingSheet37 = drawingSheets37.Item("页.1")
+
+drawingSheet37.PaperSize = catPaperA0
+
+drawingSheet37.[Scale] = 1#
+
+drawingSheet37.Orientation = catPaperLandscape
+
+Dim drawingViews37 As DrawingViews
+Set drawingViews37 = drawingSheet37.Views
+
+Dim drawingView37 As DrawingView
+Set drawingView37 = drawingViews37.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks37 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks37 = drawingView37.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior37 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior37 = drawingView37.GenerativeBehavior
+
+drawingViewGenerativeBehavior37.Document = product1
+
+drawingViewGenerativeBehavior37.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView37.X = 594.5
+
+drawingView37.Y = 420.5
+
+drawingView37.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior37 = drawingView37.GenerativeBehavior
+
+drawingViewGenerativeBehavior37.Update
+
+drawingView37.Activate
+
+Set drawingDocument37 = CATIA.ActiveDocument
+
+drawingDocument37.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt37.CATDrawing"
+
+Dim specsAndGeomWindow37 As SpecsAndGeomWindow
+Set specsAndGeomWindow37 = CATIA.ActiveWindow
+
+specsAndGeomWindow37.Close
+
+Set drawingDocument37 = CATIA.ActiveDocument
+
+drawingDocument37.Close
+
+Dim selection37 As Selection
+Set selection37 = partDocument1.Selection
+
+Dim visPropertySet37 As VisPropertySet
+Set visPropertySet37 = selection37.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit74.Parent
+
+Dim bSTR109 As String
+bSTR109 = hybridShapeSplit74.Name
+
+selection37.Add hybridShapeSplit74
+
+Set visPropertySet37 = visPropertySet37.Parent
+
+Dim bSTR110 As String
+bSTR110 = visPropertySet37.Name
+
+Dim bSTR111 As String
+bSTR111 = visPropertySet37.Name
+
+visPropertySet37.SetShow 1
+
+selection37.Clear
+
+Dim hybridShapePlaneOffset75 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset75 = hybridShapes1.Item("平面.38")
+
+Dim reference112 As Reference
+Set reference112 = part1.CreateReferenceFromObject(hybridShapePlaneOffset75)
+
+Dim hybridShapePlaneOffset76 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset76 = hybridShapeFactory1.AddNewPlaneOffset(reference112, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset76
+
+part1.InWorkObject = hybridShapePlaneOffset76
+
+part1.Update
+
+Dim hybridShapeSplit75 As HybridShapeSplit
+Set hybridShapeSplit75 = hybridShapes1.Item("分割.38")
+
+Dim reference113 As Reference
+Set reference113 = part1.CreateReferenceFromObject(hybridShapeSplit75)
+
+Dim reference114 As Reference
+Set reference114 = part1.CreateReferenceFromObject(hybridShapePlaneOffset76)
+
+Dim hybridShapeSplit76 As HybridShapeSplit
+Set hybridShapeSplit76 = hybridShapeFactory1.AddNewHybridSplit(reference113, reference114, 1)
+
+hybridShapeFactory1.GSMVisibility reference113, 0
+
+hybridShapeSplit76.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit76
+
+part1.InWorkObject = hybridShapeSplit76
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument38 As DrawingDocument
+Set drawingDocument38 = documents1.Add("Drawing")
+
+drawingDocument38.Standard = catISO
+
+Dim drawingSheets38 As DrawingSheets
+Set drawingSheets38 = drawingDocument38.Sheets
+
+Dim drawingSheet38 As DrawingSheet
+Set drawingSheet38 = drawingSheets38.Item("页.1")
+
+drawingSheet38.PaperSize = catPaperA0
+
+drawingSheet38.[Scale] = 1#
+
+drawingSheet38.Orientation = catPaperLandscape
+
+Dim drawingViews38 As DrawingViews
+Set drawingViews38 = drawingSheet38.Views
+
+Dim drawingView38 As DrawingView
+Set drawingView38 = drawingViews38.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks38 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks38 = drawingView38.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior38 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior38 = drawingView38.GenerativeBehavior
+
+drawingViewGenerativeBehavior38.Document = product1
+
+drawingViewGenerativeBehavior38.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView38.X = 594.5
+
+drawingView38.Y = 420.5
+
+drawingView38.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior38 = drawingView38.GenerativeBehavior
+
+drawingViewGenerativeBehavior38.Update
+
+drawingView38.Activate
+
+Set drawingDocument38 = CATIA.ActiveDocument
+
+drawingDocument38.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt38.CATDrawing"
+
+Dim specsAndGeomWindow38 As SpecsAndGeomWindow
+Set specsAndGeomWindow38 = CATIA.ActiveWindow
+
+specsAndGeomWindow38.Close
+
+Set drawingDocument38 = CATIA.ActiveDocument
+
+drawingDocument38.Close
+
+Dim selection38 As Selection
+Set selection38 = partDocument1.Selection
+
+Dim visPropertySet38 As VisPropertySet
+Set visPropertySet38 = selection38.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit76.Parent
+
+Dim bSTR112 As String
+bSTR112 = hybridShapeSplit76.Name
+
+selection38.Add hybridShapeSplit76
+
+Set visPropertySet38 = visPropertySet38.Parent
+
+Dim bSTR113 As String
+bSTR113 = visPropertySet38.Name
+
+Dim bSTR114 As String
+bSTR114 = visPropertySet38.Name
+
+visPropertySet38.SetShow 1
+
+selection38.Clear
+
+Dim hybridShapePlaneOffset77 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset77 = hybridShapes1.Item("平面.39")
+
+Dim reference115 As Reference
+Set reference115 = part1.CreateReferenceFromObject(hybridShapePlaneOffset77)
+
+Dim hybridShapePlaneOffset78 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset78 = hybridShapeFactory1.AddNewPlaneOffset(reference115, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset78
+
+part1.InWorkObject = hybridShapePlaneOffset78
+
+part1.Update
+
+Dim hybridShapeSplit77 As HybridShapeSplit
+Set hybridShapeSplit77 = hybridShapes1.Item("分割.39")
+
+Dim reference116 As Reference
+Set reference116 = part1.CreateReferenceFromObject(hybridShapeSplit77)
+
+Dim reference117 As Reference
+Set reference117 = part1.CreateReferenceFromObject(hybridShapePlaneOffset78)
+
+Dim hybridShapeSplit78 As HybridShapeSplit
+Set hybridShapeSplit78 = hybridShapeFactory1.AddNewHybridSplit(reference116, reference117, 1)
+
+hybridShapeFactory1.GSMVisibility reference116, 0
+
+hybridShapeSplit78.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit78
+
+part1.InWorkObject = hybridShapeSplit78
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument39 As DrawingDocument
+Set drawingDocument39 = documents1.Add("Drawing")
+
+drawingDocument39.Standard = catISO
+
+Dim drawingSheets39 As DrawingSheets
+Set drawingSheets39 = drawingDocument39.Sheets
+
+Dim drawingSheet39 As DrawingSheet
+Set drawingSheet39 = drawingSheets39.Item("页.1")
+
+drawingSheet39.PaperSize = catPaperA0
+
+drawingSheet39.[Scale] = 1#
+
+drawingSheet39.Orientation = catPaperLandscape
+
+Dim drawingViews39 As DrawingViews
+Set drawingViews39 = drawingSheet39.Views
+
+Dim drawingView39 As DrawingView
+Set drawingView39 = drawingViews39.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks39 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks39 = drawingView39.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior39 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior39 = drawingView39.GenerativeBehavior
+
+drawingViewGenerativeBehavior39.Document = product1
+
+drawingViewGenerativeBehavior39.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView39.X = 594.5
+
+drawingView39.Y = 420.5
+
+drawingView39.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior39 = drawingView39.GenerativeBehavior
+
+drawingViewGenerativeBehavior39.Update
+
+drawingView39.Activate
+
+Set drawingDocument39 = CATIA.ActiveDocument
+
+drawingDocument39.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt39.CATDrawing"
+
+Dim specsAndGeomWindow39 As SpecsAndGeomWindow
+Set specsAndGeomWindow39 = CATIA.ActiveWindow
+
+specsAndGeomWindow39.Close
+
+Set drawingDocument39 = CATIA.ActiveDocument
+
+drawingDocument39.Close
+
+Dim selection39 As Selection
+Set selection39 = partDocument1.Selection
+
+Dim visPropertySet39 As VisPropertySet
+Set visPropertySet39 = selection39.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit78.Parent
+
+Dim bSTR115 As String
+bSTR115 = hybridShapeSplit78.Name
+
+selection39.Add hybridShapeSplit78
+
+Set visPropertySet39 = visPropertySet39.Parent
+
+Dim bSTR116 As String
+bSTR116 = visPropertySet39.Name
+
+Dim bSTR117 As String
+bSTR117 = visPropertySet39.Name
+
+visPropertySet39.SetShow 1
+
+selection39.Clear
+
+Dim hybridShapePlaneOffset79 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset79 = hybridShapes1.Item("平面.40")
+
+Dim reference118 As Reference
+Set reference118 = part1.CreateReferenceFromObject(hybridShapePlaneOffset79)
+
+Dim hybridShapePlaneOffset80 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset80 = hybridShapeFactory1.AddNewPlaneOffset(reference118, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset80
+
+part1.InWorkObject = hybridShapePlaneOffset80
+
+part1.Update
+
+Dim hybridShapeSplit79 As HybridShapeSplit
+Set hybridShapeSplit79 = hybridShapes1.Item("分割.40")
+
+Dim reference119 As Reference
+Set reference119 = part1.CreateReferenceFromObject(hybridShapeSplit79)
+
+Dim reference120 As Reference
+Set reference120 = part1.CreateReferenceFromObject(hybridShapePlaneOffset80)
+
+Dim hybridShapeSplit80 As HybridShapeSplit
+Set hybridShapeSplit80 = hybridShapeFactory1.AddNewHybridSplit(reference119, reference120, 1)
+
+hybridShapeFactory1.GSMVisibility reference119, 0
+
+hybridShapeSplit80.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit80
+
+part1.InWorkObject = hybridShapeSplit80
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument40 As DrawingDocument
+Set drawingDocument40 = documents1.Add("Drawing")
+
+drawingDocument40.Standard = catISO
+
+Dim drawingSheets40 As DrawingSheets
+Set drawingSheets40 = drawingDocument40.Sheets
+
+Dim drawingSheet40 As DrawingSheet
+Set drawingSheet40 = drawingSheets40.Item("页.1")
+
+drawingSheet40.PaperSize = catPaperA0
+
+drawingSheet40.[Scale] = 1#
+
+drawingSheet40.Orientation = catPaperLandscape
+
+Dim drawingViews40 As DrawingViews
+Set drawingViews40 = drawingSheet40.Views
+
+Dim drawingView40 As DrawingView
+Set drawingView40 = drawingViews40.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks40 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks40 = drawingView40.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior40 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior40 = drawingView40.GenerativeBehavior
+
+drawingViewGenerativeBehavior40.Document = product1
+
+drawingViewGenerativeBehavior40.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView40.X = 594.5
+
+drawingView40.Y = 420.5
+
+drawingView40.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior40 = drawingView40.GenerativeBehavior
+
+drawingViewGenerativeBehavior40.Update
+
+drawingView40.Activate
+
+Set drawingDocument40 = CATIA.ActiveDocument
+
+drawingDocument40.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt40.CATDrawing"
+
+Dim specsAndGeomWindow40 As SpecsAndGeomWindow
+Set specsAndGeomWindow40 = CATIA.ActiveWindow
+
+specsAndGeomWindow40.Close
+
+Set drawingDocument40 = CATIA.ActiveDocument
+
+drawingDocument40.Close
+
+Dim selection40 As Selection
+Set selection40 = partDocument1.Selection
+
+Dim visPropertySet40 As VisPropertySet
+Set visPropertySet40 = selection40.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit80.Parent
+
+Dim bSTR118 As String
+bSTR118 = hybridShapeSplit80.Name
+
+selection40.Add hybridShapeSplit80
+
+Set visPropertySet40 = visPropertySet40.Parent
+
+Dim bSTR119 As String
+bSTR119 = visPropertySet40.Name
+
+Dim bSTR120 As String
+bSTR120 = visPropertySet40.Name
+
+visPropertySet40.SetShow 1
+
+selection40.Clear
+
+Dim hybridShapePlaneOffset81 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset81 = hybridShapes1.Item("平面.41")
+
+Dim reference121 As Reference
+Set reference121 = part1.CreateReferenceFromObject(hybridShapePlaneOffset81)
+
+Dim hybridShapePlaneOffset82 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset82 = hybridShapeFactory1.AddNewPlaneOffset(reference121, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset82
+
+part1.InWorkObject = hybridShapePlaneOffset82
+
+part1.Update
+
+Dim hybridShapeSplit81 As HybridShapeSplit
+Set hybridShapeSplit81 = hybridShapes1.Item("分割.41")
+
+Dim reference122 As Reference
+Set reference122 = part1.CreateReferenceFromObject(hybridShapeSplit81)
+
+Dim reference123 As Reference
+Set reference123 = part1.CreateReferenceFromObject(hybridShapePlaneOffset82)
+
+Dim hybridShapeSplit82 As HybridShapeSplit
+Set hybridShapeSplit82 = hybridShapeFactory1.AddNewHybridSplit(reference122, reference123, 1)
+
+hybridShapeFactory1.GSMVisibility reference122, 0
+
+hybridShapeSplit82.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit82
+
+part1.InWorkObject = hybridShapeSplit82
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument41 As DrawingDocument
+Set drawingDocument41 = documents1.Add("Drawing")
+
+drawingDocument41.Standard = catISO
+
+Dim drawingSheets41 As DrawingSheets
+Set drawingSheets41 = drawingDocument41.Sheets
+
+Dim drawingSheet41 As DrawingSheet
+Set drawingSheet41 = drawingSheets41.Item("页.1")
+
+drawingSheet41.PaperSize = catPaperA0
+
+drawingSheet41.[Scale] = 1#
+
+drawingSheet41.Orientation = catPaperLandscape
+
+Dim drawingViews41 As DrawingViews
+Set drawingViews41 = drawingSheet41.Views
+
+Dim drawingView41 As DrawingView
+Set drawingView41 = drawingViews41.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks41 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks41 = drawingView41.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior41 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior41 = drawingView41.GenerativeBehavior
+
+drawingViewGenerativeBehavior41.Document = product1
+
+drawingViewGenerativeBehavior41.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView41.X = 594.5
+
+drawingView41.Y = 420.5
+
+drawingView41.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior41 = drawingView41.GenerativeBehavior
+
+drawingViewGenerativeBehavior41.Update
+
+drawingView41.Activate
+
+Set drawingDocument41 = CATIA.ActiveDocument
+
+drawingDocument41.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt41.CATDrawing"
+
+Dim specsAndGeomWindow41 As SpecsAndGeomWindow
+Set specsAndGeomWindow41 = CATIA.ActiveWindow
+
+specsAndGeomWindow41.Close
+
+Set drawingDocument41 = CATIA.ActiveDocument
+
+drawingDocument41.Close
+
+Dim selection41 As Selection
+Set selection41 = partDocument1.Selection
+
+Dim visPropertySet41 As VisPropertySet
+Set visPropertySet41 = selection41.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit82.Parent
+
+Dim bSTR121 As String
+bSTR121 = hybridShapeSplit82.Name
+
+selection41.Add hybridShapeSplit82
+
+Set visPropertySet41 = visPropertySet41.Parent
+
+Dim bSTR122 As String
+bSTR122 = visPropertySet41.Name
+
+Dim bSTR123 As String
+bSTR123 = visPropertySet41.Name
+
+visPropertySet41.SetShow 1
+
+selection41.Clear
+
+Dim hybridShapePlaneOffset83 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset83 = hybridShapes1.Item("平面.42")
+
+Dim reference124 As Reference
+Set reference124 = part1.CreateReferenceFromObject(hybridShapePlaneOffset83)
+
+Dim hybridShapePlaneOffset84 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset84 = hybridShapeFactory1.AddNewPlaneOffset(reference124, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset84
+
+part1.InWorkObject = hybridShapePlaneOffset84
+
+part1.Update
+
+Dim hybridShapeSplit83 As HybridShapeSplit
+Set hybridShapeSplit83 = hybridShapes1.Item("分割.42")
+
+Dim reference125 As Reference
+Set reference125 = part1.CreateReferenceFromObject(hybridShapeSplit83)
+
+Dim reference126 As Reference
+Set reference126 = part1.CreateReferenceFromObject(hybridShapePlaneOffset84)
+
+Dim hybridShapeSplit84 As HybridShapeSplit
+Set hybridShapeSplit84 = hybridShapeFactory1.AddNewHybridSplit(reference125, reference126, 1)
+
+hybridShapeFactory1.GSMVisibility reference125, 0
+
+hybridShapeSplit84.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit84
+
+part1.InWorkObject = hybridShapeSplit84
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument42 As DrawingDocument
+Set drawingDocument42 = documents1.Add("Drawing")
+
+drawingDocument42.Standard = catISO
+
+Dim drawingSheets42 As DrawingSheets
+Set drawingSheets42 = drawingDocument42.Sheets
+
+Dim drawingSheet42 As DrawingSheet
+Set drawingSheet42 = drawingSheets42.Item("页.1")
+
+drawingSheet42.PaperSize = catPaperA0
+
+drawingSheet42.[Scale] = 1#
+
+drawingSheet42.Orientation = catPaperLandscape
+
+Dim drawingViews42 As DrawingViews
+Set drawingViews42 = drawingSheet42.Views
+
+Dim drawingView42 As DrawingView
+Set drawingView42 = drawingViews42.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks42 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks42 = drawingView42.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior42 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior42 = drawingView42.GenerativeBehavior
+
+drawingViewGenerativeBehavior42.Document = product1
+
+drawingViewGenerativeBehavior42.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView42.X = 594.5
+
+drawingView42.Y = 420.5
+
+drawingView42.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior42 = drawingView42.GenerativeBehavior
+
+drawingViewGenerativeBehavior42.Update
+
+drawingView42.Activate
+
+Set drawingDocument42 = CATIA.ActiveDocument
+
+drawingDocument42.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt42.CATDrawing"
+
+Dim specsAndGeomWindow42 As SpecsAndGeomWindow
+Set specsAndGeomWindow42 = CATIA.ActiveWindow
+
+specsAndGeomWindow42.Close
+
+Set drawingDocument42 = CATIA.ActiveDocument
+
+drawingDocument42.Close
+
+Dim selection42 As Selection
+Set selection42 = partDocument1.Selection
+
+Dim visPropertySet42 As VisPropertySet
+Set visPropertySet42 = selection42.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit84.Parent
+
+Dim bSTR124 As String
+bSTR124 = hybridShapeSplit84.Name
+
+selection42.Add hybridShapeSplit84
+
+Set visPropertySet42 = visPropertySet42.Parent
+
+Dim bSTR125 As String
+bSTR125 = visPropertySet42.Name
+
+Dim bSTR126 As String
+bSTR126 = visPropertySet42.Name
+
+visPropertySet42.SetShow 1
+
+selection42.Clear
+
+Dim hybridShapePlaneOffset85 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset85 = hybridShapes1.Item("平面.43")
+
+Dim reference127 As Reference
+Set reference127 = part1.CreateReferenceFromObject(hybridShapePlaneOffset85)
+
+Dim hybridShapePlaneOffset86 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset86 = hybridShapeFactory1.AddNewPlaneOffset(reference127, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset86
+
+part1.InWorkObject = hybridShapePlaneOffset86
+
+part1.Update
+
+Dim hybridShapeSplit85 As HybridShapeSplit
+Set hybridShapeSplit85 = hybridShapes1.Item("分割.43")
+
+Dim reference128 As Reference
+Set reference128 = part1.CreateReferenceFromObject(hybridShapeSplit85)
+
+Dim reference129 As Reference
+Set reference129 = part1.CreateReferenceFromObject(hybridShapePlaneOffset86)
+
+Dim hybridShapeSplit86 As HybridShapeSplit
+Set hybridShapeSplit86 = hybridShapeFactory1.AddNewHybridSplit(reference128, reference129, 1)
+
+hybridShapeFactory1.GSMVisibility reference128, 0
+
+hybridShapeSplit86.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit86
+
+part1.InWorkObject = hybridShapeSplit86
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument43 As DrawingDocument
+Set drawingDocument43 = documents1.Add("Drawing")
+
+drawingDocument43.Standard = catISO
+
+Dim drawingSheets43 As DrawingSheets
+Set drawingSheets43 = drawingDocument43.Sheets
+
+Dim drawingSheet43 As DrawingSheet
+Set drawingSheet43 = drawingSheets43.Item("页.1")
+
+drawingSheet43.PaperSize = catPaperA0
+
+drawingSheet43.[Scale] = 1#
+
+drawingSheet43.Orientation = catPaperLandscape
+
+Dim drawingViews43 As DrawingViews
+Set drawingViews43 = drawingSheet43.Views
+
+Dim drawingView43 As DrawingView
+Set drawingView43 = drawingViews43.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks43 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks43 = drawingView43.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior43 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior43 = drawingView43.GenerativeBehavior
+
+drawingViewGenerativeBehavior43.Document = product1
+
+drawingViewGenerativeBehavior43.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView43.X = 594.5
+
+drawingView43.Y = 420.5
+
+drawingView43.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior43 = drawingView43.GenerativeBehavior
+
+drawingViewGenerativeBehavior43.Update
+
+drawingView43.Activate
+
+Set drawingDocument43 = CATIA.ActiveDocument
+
+drawingDocument43.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt43.CATDrawing"
+
+Dim specsAndGeomWindow43 As SpecsAndGeomWindow
+Set specsAndGeomWindow43 = CATIA.ActiveWindow
+
+specsAndGeomWindow43.Close
+
+Set drawingDocument43 = CATIA.ActiveDocument
+
+drawingDocument43.Close
+
+Dim selection43 As Selection
+Set selection43 = partDocument1.Selection
+
+Dim visPropertySet43 As VisPropertySet
+Set visPropertySet43 = selection43.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit86.Parent
+
+Dim bSTR127 As String
+bSTR127 = hybridShapeSplit86.Name
+
+selection43.Add hybridShapeSplit86
+
+Set visPropertySet43 = visPropertySet43.Parent
+
+Dim bSTR128 As String
+bSTR128 = visPropertySet43.Name
+
+Dim bSTR129 As String
+bSTR129 = visPropertySet43.Name
+
+visPropertySet43.SetShow 1
+
+selection43.Clear
+
+Dim hybridShapePlaneOffset87 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset87 = hybridShapes1.Item("平面.44")
+
+Dim reference130 As Reference
+Set reference130 = part1.CreateReferenceFromObject(hybridShapePlaneOffset87)
+
+Dim hybridShapePlaneOffset88 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset88 = hybridShapeFactory1.AddNewPlaneOffset(reference130, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset88
+
+part1.InWorkObject = hybridShapePlaneOffset88
+
+part1.Update
+
+Dim hybridShapeSplit87 As HybridShapeSplit
+Set hybridShapeSplit87 = hybridShapes1.Item("分割.44")
+
+Dim reference131 As Reference
+Set reference131 = part1.CreateReferenceFromObject(hybridShapeSplit87)
+
+Dim reference132 As Reference
+Set reference132 = part1.CreateReferenceFromObject(hybridShapePlaneOffset88)
+
+Dim hybridShapeSplit88 As HybridShapeSplit
+Set hybridShapeSplit88 = hybridShapeFactory1.AddNewHybridSplit(reference131, reference132, 1)
+
+hybridShapeFactory1.GSMVisibility reference131, 0
+
+hybridShapeSplit88.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit88
+
+part1.InWorkObject = hybridShapeSplit88
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument44 As DrawingDocument
+Set drawingDocument44 = documents1.Add("Drawing")
+
+drawingDocument44.Standard = catISO
+
+Dim drawingSheets44 As DrawingSheets
+Set drawingSheets44 = drawingDocument44.Sheets
+
+Dim drawingSheet44 As DrawingSheet
+Set drawingSheet44 = drawingSheets44.Item("页.1")
+
+drawingSheet44.PaperSize = catPaperA0
+
+drawingSheet44.[Scale] = 1#
+
+drawingSheet44.Orientation = catPaperLandscape
+
+Dim drawingViews44 As DrawingViews
+Set drawingViews44 = drawingSheet44.Views
+
+Dim drawingView44 As DrawingView
+Set drawingView44 = drawingViews44.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks44 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks44 = drawingView44.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior44 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior44 = drawingView44.GenerativeBehavior
+
+drawingViewGenerativeBehavior44.Document = product1
+
+drawingViewGenerativeBehavior44.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView44.X = 594.5
+
+drawingView44.Y = 420.5
+
+drawingView44.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior44 = drawingView44.GenerativeBehavior
+
+drawingViewGenerativeBehavior44.Update
+
+drawingView44.Activate
+
+Set drawingDocument44 = CATIA.ActiveDocument
+
+drawingDocument44.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt44.CATDrawing"
+
+Dim specsAndGeomWindow44 As SpecsAndGeomWindow
+Set specsAndGeomWindow44 = CATIA.ActiveWindow
+
+specsAndGeomWindow44.Close
+
+Set drawingDocument44 = CATIA.ActiveDocument
+
+drawingDocument44.Close
+
+Dim selection44 As Selection
+Set selection44 = partDocument1.Selection
+
+Dim visPropertySet44 As VisPropertySet
+Set visPropertySet44 = selection44.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit88.Parent
+
+Dim bSTR130 As String
+bSTR130 = hybridShapeSplit88.Name
+
+selection44.Add hybridShapeSplit88
+
+Set visPropertySet44 = visPropertySet44.Parent
+
+Dim bSTR131 As String
+bSTR131 = visPropertySet44.Name
+
+Dim bSTR132 As String
+bSTR132 = visPropertySet44.Name
+
+visPropertySet44.SetShow 1
+
+selection44.Clear
+
+Dim hybridShapePlaneOffset89 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset89 = hybridShapes1.Item("平面.45")
+
+Dim reference133 As Reference
+Set reference133 = part1.CreateReferenceFromObject(hybridShapePlaneOffset89)
+
+Dim hybridShapePlaneOffset90 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset90 = hybridShapeFactory1.AddNewPlaneOffset(reference133, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset90
+
+part1.InWorkObject = hybridShapePlaneOffset90
+
+part1.Update
+
+Dim hybridShapeSplit89 As HybridShapeSplit
+Set hybridShapeSplit89 = hybridShapes1.Item("分割.45")
+
+Dim reference134 As Reference
+Set reference134 = part1.CreateReferenceFromObject(hybridShapeSplit89)
+
+Dim reference135 As Reference
+Set reference135 = part1.CreateReferenceFromObject(hybridShapePlaneOffset90)
+
+Dim hybridShapeSplit90 As HybridShapeSplit
+Set hybridShapeSplit90 = hybridShapeFactory1.AddNewHybridSplit(reference134, reference135, 1)
+
+hybridShapeFactory1.GSMVisibility reference134, 0
+
+hybridShapeSplit90.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit90
+
+part1.InWorkObject = hybridShapeSplit90
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument45 As DrawingDocument
+Set drawingDocument45 = documents1.Add("Drawing")
+
+drawingDocument45.Standard = catISO
+
+Dim drawingSheets45 As DrawingSheets
+Set drawingSheets45 = drawingDocument45.Sheets
+
+Dim drawingSheet45 As DrawingSheet
+Set drawingSheet45 = drawingSheets45.Item("页.1")
+
+drawingSheet45.PaperSize = catPaperA0
+
+drawingSheet45.[Scale] = 1#
+
+drawingSheet45.Orientation = catPaperLandscape
+
+Dim drawingViews45 As DrawingViews
+Set drawingViews45 = drawingSheet45.Views
+
+Dim drawingView45 As DrawingView
+Set drawingView45 = drawingViews45.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks45 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks45 = drawingView45.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior45 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior45 = drawingView45.GenerativeBehavior
+
+drawingViewGenerativeBehavior45.Document = product1
+
+drawingViewGenerativeBehavior45.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView45.X = 594.5
+
+drawingView45.Y = 420.5
+
+drawingView45.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior45 = drawingView45.GenerativeBehavior
+
+drawingViewGenerativeBehavior45.Update
+
+drawingView45.Activate
+
+Set drawingDocument45 = CATIA.ActiveDocument
+
+drawingDocument45.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt45.CATDrawing"
+
+Dim specsAndGeomWindow45 As SpecsAndGeomWindow
+Set specsAndGeomWindow45 = CATIA.ActiveWindow
+
+specsAndGeomWindow45.Close
+
+Set drawingDocument45 = CATIA.ActiveDocument
+
+drawingDocument45.Close
+
+Dim selection45 As Selection
+Set selection45 = partDocument1.Selection
+
+Dim visPropertySet45 As VisPropertySet
+Set visPropertySet45 = selection45.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit90.Parent
+
+Dim bSTR133 As String
+bSTR133 = hybridShapeSplit90.Name
+
+selection45.Add hybridShapeSplit90
+
+Set visPropertySet45 = visPropertySet45.Parent
+
+Dim bSTR134 As String
+bSTR134 = visPropertySet45.Name
+
+Dim bSTR135 As String
+bSTR135 = visPropertySet45.Name
+
+visPropertySet45.SetShow 1
+
+selection45.Clear
+
+Dim hybridShapePlaneOffset91 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset91 = hybridShapes1.Item("平面.46")
+
+Dim reference136 As Reference
+Set reference136 = part1.CreateReferenceFromObject(hybridShapePlaneOffset91)
+
+Dim hybridShapePlaneOffset92 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset92 = hybridShapeFactory1.AddNewPlaneOffset(reference136, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset92
+
+part1.InWorkObject = hybridShapePlaneOffset92
+
+part1.Update
+
+Dim hybridShapeSplit91 As HybridShapeSplit
+Set hybridShapeSplit91 = hybridShapes1.Item("分割.46")
+
+Dim reference137 As Reference
+Set reference137 = part1.CreateReferenceFromObject(hybridShapeSplit91)
+
+Dim reference138 As Reference
+Set reference138 = part1.CreateReferenceFromObject(hybridShapePlaneOffset92)
+
+Dim hybridShapeSplit92 As HybridShapeSplit
+Set hybridShapeSplit92 = hybridShapeFactory1.AddNewHybridSplit(reference137, reference138, 1)
+
+hybridShapeFactory1.GSMVisibility reference137, 0
+
+hybridShapeSplit92.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit92
+
+part1.InWorkObject = hybridShapeSplit92
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument46 As DrawingDocument
+Set drawingDocument46 = documents1.Add("Drawing")
+
+drawingDocument46.Standard = catISO
+
+Dim drawingSheets46 As DrawingSheets
+Set drawingSheets46 = drawingDocument46.Sheets
+
+Dim drawingSheet46 As DrawingSheet
+Set drawingSheet46 = drawingSheets46.Item("页.1")
+
+drawingSheet46.PaperSize = catPaperA0
+
+drawingSheet46.[Scale] = 1#
+
+drawingSheet46.Orientation = catPaperLandscape
+
+Dim drawingViews46 As DrawingViews
+Set drawingViews46 = drawingSheet46.Views
+
+Dim drawingView46 As DrawingView
+Set drawingView46 = drawingViews46.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks46 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks46 = drawingView46.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior46 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior46 = drawingView46.GenerativeBehavior
+
+drawingViewGenerativeBehavior46.Document = product1
+
+drawingViewGenerativeBehavior46.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView46.X = 594.5
+
+drawingView46.Y = 420.5
+
+drawingView46.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior46 = drawingView46.GenerativeBehavior
+
+drawingViewGenerativeBehavior46.Update
+
+drawingView46.Activate
+
+Set drawingDocument46 = CATIA.ActiveDocument
+
+drawingDocument46.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt46.CATDrawing"
+
+Dim specsAndGeomWindow46 As SpecsAndGeomWindow
+Set specsAndGeomWindow46 = CATIA.ActiveWindow
+
+specsAndGeomWindow46.Close
+
+Set drawingDocument46 = CATIA.ActiveDocument
+
+drawingDocument46.Close
+
+Dim selection46 As Selection
+Set selection46 = partDocument1.Selection
+
+Dim visPropertySet46 As VisPropertySet
+Set visPropertySet46 = selection46.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit92.Parent
+
+Dim bSTR136 As String
+bSTR136 = hybridShapeSplit92.Name
+
+selection46.Add hybridShapeSplit92
+
+Set visPropertySet46 = visPropertySet46.Parent
+
+Dim bSTR137 As String
+bSTR137 = visPropertySet46.Name
+
+Dim bSTR138 As String
+bSTR138 = visPropertySet46.Name
+
+visPropertySet46.SetShow 1
+
+selection46.Clear
+
+Dim hybridShapePlaneOffset93 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset93 = hybridShapes1.Item("平面.47")
+
+Dim reference139 As Reference
+Set reference139 = part1.CreateReferenceFromObject(hybridShapePlaneOffset93)
+
+Dim hybridShapePlaneOffset94 As HybridShapePlaneOffset
+Set hybridShapePlaneOffset94 = hybridShapeFactory1.AddNewPlaneOffset(reference139, -0.01, False)
+
+hybridBody1.AppendHybridShape hybridShapePlaneOffset94
+
+part1.InWorkObject = hybridShapePlaneOffset94
+
+part1.Update
+
+Dim hybridShapeSplit93 As HybridShapeSplit
+Set hybridShapeSplit93 = hybridShapes1.Item("分割.47")
+
+Dim reference140 As Reference
+Set reference140 = part1.CreateReferenceFromObject(hybridShapeSplit93)
+
+Dim reference141 As Reference
+Set reference141 = part1.CreateReferenceFromObject(hybridShapePlaneOffset94)
+
+Dim hybridShapeSplit94 As HybridShapeSplit
+Set hybridShapeSplit94 = hybridShapeFactory1.AddNewHybridSplit(reference140, reference141, 1)
+
+hybridShapeFactory1.GSMVisibility reference140, 0
+
+hybridShapeSplit94.ExtrapolationType = 1
+
+hybridBody1.AppendHybridShape hybridShapeSplit94
+
+part1.InWorkObject = hybridShapeSplit94
+
+part1.Update
+
+part1.Update
+
+Dim drawingDocument47 As DrawingDocument
+Set drawingDocument47 = documents1.Add("Drawing")
+
+drawingDocument47.Standard = catISO
+
+Dim drawingSheets47 As DrawingSheets
+Set drawingSheets47 = drawingDocument47.Sheets
+
+Dim drawingSheet47 As DrawingSheet
+Set drawingSheet47 = drawingSheets47.Item("页.1")
+
+drawingSheet47.PaperSize = catPaperA0
+
+drawingSheet47.[Scale] = 1#
+
+drawingSheet47.Orientation = catPaperLandscape
+
+Dim drawingViews47 As DrawingViews
+Set drawingViews47 = drawingSheet47.Views
+
+Dim drawingView47 As DrawingView
+Set drawingView47 = drawingViews47.Add("AutomaticNaming")
+
+Dim drawingViewGenerativeLinks47 As DrawingViewGenerativeLinks
+Set drawingViewGenerativeLinks47 = drawingView47.GenerativeLinks
+
+Dim drawingViewGenerativeBehavior47 As DrawingViewGenerativeBehavior
+Set drawingViewGenerativeBehavior47 = drawingView47.GenerativeBehavior
+
+drawingViewGenerativeBehavior47.Document = product1
+
+drawingViewGenerativeBehavior47.DefineFrontView 0#, 1#, 0#, 0#, 0#, 1#
+
+drawingView47.X = 594.5
+
+drawingView47.Y = 420.5
+
+drawingView47.[Scale] = 1#
+
+Set drawingViewGenerativeBehavior47 = drawingView47.GenerativeBehavior
+
+drawingViewGenerativeBehavior47.Update
+
+drawingView47.Activate
+
+Set drawingDocument47 = CATIA.ActiveDocument
+
+drawingDocument47.SaveAs "E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt47.CATDrawing"
+
+Dim specsAndGeomWindow47 As SpecsAndGeomWindow
+Set specsAndGeomWindow47 = CATIA.ActiveWindow
+
+specsAndGeomWindow47.Close
+
+Set drawingDocument47 = CATIA.ActiveDocument
+
+drawingDocument47.Close
+
+Dim selection47 As Selection
+Set selection47 = partDocument1.Selection
+
+Dim visPropertySet47 As VisPropertySet
+Set visPropertySet47 = selection47.VisProperties
+
+Set hybridShapes1 = hybridShapeSplit94.Parent
+
+Dim bSTR139 As String
+bSTR139 = hybridShapeSplit94.Name
+
+selection47.Add hybridShapeSplit94
+
+Set visPropertySet47 = visPropertySet47.Parent
+
+Dim bSTR140 As String
+bSTR140 = visPropertySet47.Name
+
+Dim bSTR141 As String
+bSTR141 = visPropertySet47.Name
+
+visPropertySet47.SetShow 1
+
+selection47.Clear
+
