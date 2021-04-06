@@ -1,0 +1,765 @@
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument3 As DrawingDocument
+Set drawingDocument3 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt3.CATDrawing")
+
+Set drawingDocument3 = CATIA.ActiveDocument
+
+drawingDocument3.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt3.dwg", "dwg"
+
+Dim specsAndGeomWindow3 As SpecsAndGeomWindow
+Set specsAndGeomWindow3 = CATIA.ActiveWindow
+
+specsAndGeomWindow3.Close
+
+Set drawingDocument3 = CATIA.ActiveDocument
+
+drawingDocument3.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument4 As DrawingDocument
+Set drawingDocument4 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt4.CATDrawing")
+
+Set drawingDocument4 = CATIA.ActiveDocument
+
+drawingDocument4.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt4.dwg", "dwg"
+
+Dim specsAndGeomWindow4 As SpecsAndGeomWindow
+Set specsAndGeomWindow4 = CATIA.ActiveWindow
+
+specsAndGeomWindow4.Close
+
+Set drawingDocument4 = CATIA.ActiveDocument
+
+drawingDocument4.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument5 As DrawingDocument
+Set drawingDocument5 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt5.CATDrawing")
+
+Set drawingDocument5 = CATIA.ActiveDocument
+
+drawingDocument5.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt5.dwg", "dwg"
+
+Dim specsAndGeomWindow5 As SpecsAndGeomWindow
+Set specsAndGeomWindow5 = CATIA.ActiveWindow
+
+specsAndGeomWindow5.Close
+
+Set drawingDocument5 = CATIA.ActiveDocument
+
+drawingDocument5.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument6 As DrawingDocument
+Set drawingDocument6 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt6.CATDrawing")
+
+Set drawingDocument6 = CATIA.ActiveDocument
+
+drawingDocument6.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt6.dwg", "dwg"
+
+Dim specsAndGeomWindow6 As SpecsAndGeomWindow
+Set specsAndGeomWindow6 = CATIA.ActiveWindow
+
+specsAndGeomWindow6.Close
+
+Set drawingDocument6 = CATIA.ActiveDocument
+
+drawingDocument6.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument7 As DrawingDocument
+Set drawingDocument7 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt7.CATDrawing")
+
+Set drawingDocument7 = CATIA.ActiveDocument
+
+drawingDocument7.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt7.dwg", "dwg"
+
+Dim specsAndGeomWindow7 As SpecsAndGeomWindow
+Set specsAndGeomWindow7 = CATIA.ActiveWindow
+
+specsAndGeomWindow7.Close
+
+Set drawingDocument7 = CATIA.ActiveDocument
+
+drawingDocument7.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument8 As DrawingDocument
+Set drawingDocument8 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt8.CATDrawing")
+
+Set drawingDocument8 = CATIA.ActiveDocument
+
+drawingDocument8.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt8.dwg", "dwg"
+
+Dim specsAndGeomWindow8 As SpecsAndGeomWindow
+Set specsAndGeomWindow8 = CATIA.ActiveWindow
+
+specsAndGeomWindow8.Close
+
+Set drawingDocument8 = CATIA.ActiveDocument
+
+drawingDocument8.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument9 As DrawingDocument
+Set drawingDocument9 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt9.CATDrawing")
+
+Set drawingDocument9 = CATIA.ActiveDocument
+
+drawingDocument9.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt9.dwg", "dwg"
+
+Dim specsAndGeomWindow9 As SpecsAndGeomWindow
+Set specsAndGeomWindow9 = CATIA.ActiveWindow
+
+specsAndGeomWindow9.Close
+
+Set drawingDocument9 = CATIA.ActiveDocument
+
+drawingDocument9.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument10 As DrawingDocument
+Set drawingDocument10 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt10.CATDrawing")
+
+Set drawingDocument10 = CATIA.ActiveDocument
+
+drawingDocument10.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt10.dwg", "dwg"
+
+Dim specsAndGeomWindow10 As SpecsAndGeomWindow
+Set specsAndGeomWindow10 = CATIA.ActiveWindow
+
+specsAndGeomWindow10.Close
+
+Set drawingDocument10 = CATIA.ActiveDocument
+
+drawingDocument10.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument11 As DrawingDocument
+Set drawingDocument11 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt11.CATDrawing")
+
+Set drawingDocument11 = CATIA.ActiveDocument
+
+drawingDocument11.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt11.dwg", "dwg"
+
+Dim specsAndGeomWindow11 As SpecsAndGeomWindow
+Set specsAndGeomWindow11 = CATIA.ActiveWindow
+
+specsAndGeomWindow11.Close
+
+Set drawingDocument11 = CATIA.ActiveDocument
+
+drawingDocument11.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument12 As DrawingDocument
+Set drawingDocument12 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt12.CATDrawing")
+
+Set drawingDocument12 = CATIA.ActiveDocument
+
+drawingDocument12.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt12.dwg", "dwg"
+
+Dim specsAndGeomWindow12 As SpecsAndGeomWindow
+Set specsAndGeomWindow12 = CATIA.ActiveWindow
+
+specsAndGeomWindow12.Close
+
+Set drawingDocument12 = CATIA.ActiveDocument
+
+drawingDocument12.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument13 As DrawingDocument
+Set drawingDocument13 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt13.CATDrawing")
+
+Set drawingDocument13 = CATIA.ActiveDocument
+
+drawingDocument13.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt13.dwg", "dwg"
+
+Dim specsAndGeomWindow13 As SpecsAndGeomWindow
+Set specsAndGeomWindow13 = CATIA.ActiveWindow
+
+specsAndGeomWindow13.Close
+
+Set drawingDocument13 = CATIA.ActiveDocument
+
+drawingDocument13.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument14 As DrawingDocument
+Set drawingDocument14 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt14.CATDrawing")
+
+Set drawingDocument14 = CATIA.ActiveDocument
+
+drawingDocument14.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt14.dwg", "dwg"
+
+Dim specsAndGeomWindow14 As SpecsAndGeomWindow
+Set specsAndGeomWindow14 = CATIA.ActiveWindow
+
+specsAndGeomWindow14.Close
+
+Set drawingDocument14 = CATIA.ActiveDocument
+
+drawingDocument14.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument15 As DrawingDocument
+Set drawingDocument15 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt15.CATDrawing")
+
+Set drawingDocument15 = CATIA.ActiveDocument
+
+drawingDocument15.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt15.dwg", "dwg"
+
+Dim specsAndGeomWindow15 As SpecsAndGeomWindow
+Set specsAndGeomWindow15 = CATIA.ActiveWindow
+
+specsAndGeomWindow15.Close
+
+Set drawingDocument15 = CATIA.ActiveDocument
+
+drawingDocument15.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument16 As DrawingDocument
+Set drawingDocument16 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt16.CATDrawing")
+
+Set drawingDocument16 = CATIA.ActiveDocument
+
+drawingDocument16.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt16.dwg", "dwg"
+
+Dim specsAndGeomWindow16 As SpecsAndGeomWindow
+Set specsAndGeomWindow16 = CATIA.ActiveWindow
+
+specsAndGeomWindow16.Close
+
+Set drawingDocument16 = CATIA.ActiveDocument
+
+drawingDocument16.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument17 As DrawingDocument
+Set drawingDocument17 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt17.CATDrawing")
+
+Set drawingDocument17 = CATIA.ActiveDocument
+
+drawingDocument17.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt17.dwg", "dwg"
+
+Dim specsAndGeomWindow17 As SpecsAndGeomWindow
+Set specsAndGeomWindow17 = CATIA.ActiveWindow
+
+specsAndGeomWindow17.Close
+
+Set drawingDocument17 = CATIA.ActiveDocument
+
+drawingDocument17.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument18 As DrawingDocument
+Set drawingDocument18 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt18.CATDrawing")
+
+Set drawingDocument18 = CATIA.ActiveDocument
+
+drawingDocument18.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt18.dwg", "dwg"
+
+Dim specsAndGeomWindow18 As SpecsAndGeomWindow
+Set specsAndGeomWindow18 = CATIA.ActiveWindow
+
+specsAndGeomWindow18.Close
+
+Set drawingDocument18 = CATIA.ActiveDocument
+
+drawingDocument18.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument19 As DrawingDocument
+Set drawingDocument19 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt19.CATDrawing")
+
+Set drawingDocument19 = CATIA.ActiveDocument
+
+drawingDocument19.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt19.dwg", "dwg"
+
+Dim specsAndGeomWindow19 As SpecsAndGeomWindow
+Set specsAndGeomWindow19 = CATIA.ActiveWindow
+
+specsAndGeomWindow19.Close
+
+Set drawingDocument19 = CATIA.ActiveDocument
+
+drawingDocument19.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument20 As DrawingDocument
+Set drawingDocument20 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt20.CATDrawing")
+
+Set drawingDocument20 = CATIA.ActiveDocument
+
+drawingDocument20.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt20.dwg", "dwg"
+
+Dim specsAndGeomWindow20 As SpecsAndGeomWindow
+Set specsAndGeomWindow20 = CATIA.ActiveWindow
+
+specsAndGeomWindow20.Close
+
+Set drawingDocument20 = CATIA.ActiveDocument
+
+drawingDocument20.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument21 As DrawingDocument
+Set drawingDocument21 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt21.CATDrawing")
+
+Set drawingDocument21 = CATIA.ActiveDocument
+
+drawingDocument21.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt21.dwg", "dwg"
+
+Dim specsAndGeomWindow21 As SpecsAndGeomWindow
+Set specsAndGeomWindow21 = CATIA.ActiveWindow
+
+specsAndGeomWindow21.Close
+
+Set drawingDocument21 = CATIA.ActiveDocument
+
+drawingDocument21.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument22 As DrawingDocument
+Set drawingDocument22 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt22.CATDrawing")
+
+Set drawingDocument22 = CATIA.ActiveDocument
+
+drawingDocument22.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt22.dwg", "dwg"
+
+Dim specsAndGeomWindow22 As SpecsAndGeomWindow
+Set specsAndGeomWindow22 = CATIA.ActiveWindow
+
+specsAndGeomWindow22.Close
+
+Set drawingDocument22 = CATIA.ActiveDocument
+
+drawingDocument22.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument23 As DrawingDocument
+Set drawingDocument23 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt23.CATDrawing")
+
+Set drawingDocument23 = CATIA.ActiveDocument
+
+drawingDocument23.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt23.dwg", "dwg"
+
+Dim specsAndGeomWindow23 As SpecsAndGeomWindow
+Set specsAndGeomWindow23 = CATIA.ActiveWindow
+
+specsAndGeomWindow23.Close
+
+Set drawingDocument23 = CATIA.ActiveDocument
+
+drawingDocument23.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument24 As DrawingDocument
+Set drawingDocument24 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt24.CATDrawing")
+
+Set drawingDocument24 = CATIA.ActiveDocument
+
+drawingDocument24.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt24.dwg", "dwg"
+
+Dim specsAndGeomWindow24 As SpecsAndGeomWindow
+Set specsAndGeomWindow24 = CATIA.ActiveWindow
+
+specsAndGeomWindow24.Close
+
+Set drawingDocument24 = CATIA.ActiveDocument
+
+drawingDocument24.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument25 As DrawingDocument
+Set drawingDocument25 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt25.CATDrawing")
+
+Set drawingDocument25 = CATIA.ActiveDocument
+
+drawingDocument25.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt25.dwg", "dwg"
+
+Dim specsAndGeomWindow25 As SpecsAndGeomWindow
+Set specsAndGeomWindow25 = CATIA.ActiveWindow
+
+specsAndGeomWindow25.Close
+
+Set drawingDocument25 = CATIA.ActiveDocument
+
+drawingDocument25.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument26 As DrawingDocument
+Set drawingDocument26 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt26.CATDrawing")
+
+Set drawingDocument26 = CATIA.ActiveDocument
+
+drawingDocument26.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt26.dwg", "dwg"
+
+Dim specsAndGeomWindow26 As SpecsAndGeomWindow
+Set specsAndGeomWindow26 = CATIA.ActiveWindow
+
+specsAndGeomWindow26.Close
+
+Set drawingDocument26 = CATIA.ActiveDocument
+
+drawingDocument26.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument27 As DrawingDocument
+Set drawingDocument27 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt27.CATDrawing")
+
+Set drawingDocument27 = CATIA.ActiveDocument
+
+drawingDocument27.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt27.dwg", "dwg"
+
+Dim specsAndGeomWindow27 As SpecsAndGeomWindow
+Set specsAndGeomWindow27 = CATIA.ActiveWindow
+
+specsAndGeomWindow27.Close
+
+Set drawingDocument27 = CATIA.ActiveDocument
+
+drawingDocument27.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument28 As DrawingDocument
+Set drawingDocument28 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt28.CATDrawing")
+
+Set drawingDocument28 = CATIA.ActiveDocument
+
+drawingDocument28.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt28.dwg", "dwg"
+
+Dim specsAndGeomWindow28 As SpecsAndGeomWindow
+Set specsAndGeomWindow28 = CATIA.ActiveWindow
+
+specsAndGeomWindow28.Close
+
+Set drawingDocument28 = CATIA.ActiveDocument
+
+drawingDocument28.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument29 As DrawingDocument
+Set drawingDocument29 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt29.CATDrawing")
+
+Set drawingDocument29 = CATIA.ActiveDocument
+
+drawingDocument29.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt29.dwg", "dwg"
+
+Dim specsAndGeomWindow29 As SpecsAndGeomWindow
+Set specsAndGeomWindow29 = CATIA.ActiveWindow
+
+specsAndGeomWindow29.Close
+
+Set drawingDocument29 = CATIA.ActiveDocument
+
+drawingDocument29.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument30 As DrawingDocument
+Set drawingDocument30 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt30.CATDrawing")
+
+Set drawingDocument30 = CATIA.ActiveDocument
+
+drawingDocument30.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt30.dwg", "dwg"
+
+Dim specsAndGeomWindow30 As SpecsAndGeomWindow
+Set specsAndGeomWindow30 = CATIA.ActiveWindow
+
+specsAndGeomWindow30.Close
+
+Set drawingDocument30 = CATIA.ActiveDocument
+
+drawingDocument30.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument31 As DrawingDocument
+Set drawingDocument31 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt31.CATDrawing")
+
+Set drawingDocument31 = CATIA.ActiveDocument
+
+drawingDocument31.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt31.dwg", "dwg"
+
+Dim specsAndGeomWindow31 As SpecsAndGeomWindow
+Set specsAndGeomWindow31 = CATIA.ActiveWindow
+
+specsAndGeomWindow31.Close
+
+Set drawingDocument31 = CATIA.ActiveDocument
+
+drawingDocument31.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument32 As DrawingDocument
+Set drawingDocument32 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt32.CATDrawing")
+
+Set drawingDocument32 = CATIA.ActiveDocument
+
+drawingDocument32.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt32.dwg", "dwg"
+
+Dim specsAndGeomWindow32 As SpecsAndGeomWindow
+Set specsAndGeomWindow32 = CATIA.ActiveWindow
+
+specsAndGeomWindow32.Close
+
+Set drawingDocument32 = CATIA.ActiveDocument
+
+drawingDocument32.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument33 As DrawingDocument
+Set drawingDocument33 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt33.CATDrawing")
+
+Set drawingDocument33 = CATIA.ActiveDocument
+
+drawingDocument33.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt33.dwg", "dwg"
+
+Dim specsAndGeomWindow33 As SpecsAndGeomWindow
+Set specsAndGeomWindow33 = CATIA.ActiveWindow
+
+specsAndGeomWindow33.Close
+
+Set drawingDocument33 = CATIA.ActiveDocument
+
+drawingDocument33.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument34 As DrawingDocument
+Set drawingDocument34 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt34.CATDrawing")
+
+Set drawingDocument34 = CATIA.ActiveDocument
+
+drawingDocument34.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt34.dwg", "dwg"
+
+Dim specsAndGeomWindow34 As SpecsAndGeomWindow
+Set specsAndGeomWindow34 = CATIA.ActiveWindow
+
+specsAndGeomWindow34.Close
+
+Set drawingDocument34 = CATIA.ActiveDocument
+
+drawingDocument34.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument35 As DrawingDocument
+Set drawingDocument35 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt35.CATDrawing")
+
+Set drawingDocument35 = CATIA.ActiveDocument
+
+drawingDocument35.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt35.dwg", "dwg"
+
+Dim specsAndGeomWindow35 As SpecsAndGeomWindow
+Set specsAndGeomWindow35 = CATIA.ActiveWindow
+
+specsAndGeomWindow35.Close
+
+Set drawingDocument35 = CATIA.ActiveDocument
+
+drawingDocument35.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument36 As DrawingDocument
+Set drawingDocument36 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt36.CATDrawing")
+
+Set drawingDocument36 = CATIA.ActiveDocument
+
+drawingDocument36.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt36.dwg", "dwg"
+
+Dim specsAndGeomWindow36 As SpecsAndGeomWindow
+Set specsAndGeomWindow36 = CATIA.ActiveWindow
+
+specsAndGeomWindow36.Close
+
+Set drawingDocument36 = CATIA.ActiveDocument
+
+drawingDocument36.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument37 As DrawingDocument
+Set drawingDocument37 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt37.CATDrawing")
+
+Set drawingDocument37 = CATIA.ActiveDocument
+
+drawingDocument37.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt37.dwg", "dwg"
+
+Dim specsAndGeomWindow37 As SpecsAndGeomWindow
+Set specsAndGeomWindow37 = CATIA.ActiveWindow
+
+specsAndGeomWindow37.Close
+
+Set drawingDocument37 = CATIA.ActiveDocument
+
+drawingDocument37.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument38 As DrawingDocument
+Set drawingDocument38 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt38.CATDrawing")
+
+Set drawingDocument38 = CATIA.ActiveDocument
+
+drawingDocument38.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt38.dwg", "dwg"
+
+Dim specsAndGeomWindow38 As SpecsAndGeomWindow
+Set specsAndGeomWindow38 = CATIA.ActiveWindow
+
+specsAndGeomWindow38.Close
+
+Set drawingDocument38 = CATIA.ActiveDocument
+
+drawingDocument38.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument39 As DrawingDocument
+Set drawingDocument39 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt39.CATDrawing")
+
+Set drawingDocument39 = CATIA.ActiveDocument
+
+drawingDocument39.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt39.dwg", "dwg"
+
+Dim specsAndGeomWindow39 As SpecsAndGeomWindow
+Set specsAndGeomWindow39 = CATIA.ActiveWindow
+
+specsAndGeomWindow39.Close
+
+Set drawingDocument39 = CATIA.ActiveDocument
+
+drawingDocument39.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument40 As DrawingDocument
+Set drawingDocument40 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt40.CATDrawing")
+
+Set drawingDocument40 = CATIA.ActiveDocument
+
+drawingDocument40.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt40.dwg", "dwg"
+
+Dim specsAndGeomWindow40 As SpecsAndGeomWindow
+Set specsAndGeomWindow40 = CATIA.ActiveWindow
+
+specsAndGeomWindow40.Close
+
+Set drawingDocument40 = CATIA.ActiveDocument
+
+drawingDocument40.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument41 As DrawingDocument
+Set drawingDocument41 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt41.CATDrawing")
+
+Set drawingDocument41 = CATIA.ActiveDocument
+
+drawingDocument41.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt41.dwg", "dwg"
+
+Dim specsAndGeomWindow41 As SpecsAndGeomWindow
+Set specsAndGeomWindow41 = CATIA.ActiveWindow
+
+specsAndGeomWindow41.Close
+
+Set drawingDocument41 = CATIA.ActiveDocument
+
+drawingDocument41.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument42 As DrawingDocument
+Set drawingDocument42 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt42.CATDrawing")
+
+Set drawingDocument42 = CATIA.ActiveDocument
+
+drawingDocument42.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt42.dwg", "dwg"
+
+Dim specsAndGeomWindow42 As SpecsAndGeomWindow
+Set specsAndGeomWindow42 = CATIA.ActiveWindow
+
+specsAndGeomWindow42.Close
+
+Set drawingDocument42 = CATIA.ActiveDocument
+
+drawingDocument42.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument43 As DrawingDocument
+Set drawingDocument43 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt43.CATDrawing")
+
+Set drawingDocument43 = CATIA.ActiveDocument
+
+drawingDocument43.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt43.dwg", "dwg"
+
+Dim specsAndGeomWindow43 As SpecsAndGeomWindow
+Set specsAndGeomWindow43 = CATIA.ActiveWindow
+
+specsAndGeomWindow43.Close
+
+Set drawingDocument43 = CATIA.ActiveDocument
+
+drawingDocument43.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument44 As DrawingDocument
+Set drawingDocument44 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt44.CATDrawing")
+
+Set drawingDocument44 = CATIA.ActiveDocument
+
+drawingDocument44.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt44.dwg", "dwg"
+
+Dim specsAndGeomWindow44 As SpecsAndGeomWindow
+Set specsAndGeomWindow44 = CATIA.ActiveWindow
+
+specsAndGeomWindow44.Close
+
+Set drawingDocument44 = CATIA.ActiveDocument
+
+drawingDocument44.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument45 As DrawingDocument
+Set drawingDocument45 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt45.CATDrawing")
+
+Set drawingDocument45 = CATIA.ActiveDocument
+
+drawingDocument45.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt45.dwg", "dwg"
+
+Dim specsAndGeomWindow45 As SpecsAndGeomWindow
+Set specsAndGeomWindow45 = CATIA.ActiveWindow
+
+specsAndGeomWindow45.Close
+
+Set drawingDocument45 = CATIA.ActiveDocument
+
+drawingDocument45.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument46 As DrawingDocument
+Set drawingDocument46 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt46.CATDrawing")
+
+Set drawingDocument46 = CATIA.ActiveDocument
+
+drawingDocument46.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt46.dwg", "dwg"
+
+Dim specsAndGeomWindow46 As SpecsAndGeomWindow
+Set specsAndGeomWindow46 = CATIA.ActiveWindow
+
+specsAndGeomWindow46.Close
+
+Set drawingDocument46 = CATIA.ActiveDocument
+
+drawingDocument46.Close
+Set documents1 = CATIA.Documents
+
+Dim drawingDocument47 As DrawingDocument
+Set drawingDocument47 = documents1.Open("E:\Users\acer\Desktop\fuselageout\fuselage302\cat\tt47.CATDrawing")
+
+Set drawingDocument47 = CATIA.ActiveDocument
+
+drawingDocument47.ExportData "E:\Users\acer\Desktop\fuselageout\fuselage302\dwg\tt47.dwg", "dwg"
+
+Dim specsAndGeomWindow47 As SpecsAndGeomWindow
+Set specsAndGeomWindow47 = CATIA.ActiveWindow
+
+specsAndGeomWindow47.Close
+
+Set drawingDocument47 = CATIA.ActiveDocument
+
+drawingDocument47.Close
